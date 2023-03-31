@@ -42,7 +42,7 @@
   <br>
 
 <p align="center" >
-  <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/107f2287c8135fff451a2f701dc10fae8d9f72f0/V-4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
+  <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/8ea3b90f7becef6b09e9f3f46d8e73c102e380a4/V4-DEMO2.gif" alt="DEMO" style="border-radius: 20px;" />
 </p>
 
 ### Tutorials
