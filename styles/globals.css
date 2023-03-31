@@ -337,6 +337,7 @@
 
 .skills-box{/* parent container */
   margin-top: 125px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -656,7 +657,7 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 400px;
+  margin-top: 250px;
 
 
 }
@@ -1389,6 +1390,10 @@ body {
 
 .project-deets{
 
+}
+
+.skills-box{
+  width: 100%;
 }
 } 
 
