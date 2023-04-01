@@ -6,7 +6,7 @@
 
 
 [ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://google.com) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/master/LICENSE" target="blank">
+<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
 <a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/graphs/contributors">
