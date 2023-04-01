@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 
 
 /* styles in styles/global.css */
-
-
-
+/* adding selected work feature, easy access to top projects */
 
 
 
