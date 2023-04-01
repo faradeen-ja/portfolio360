@@ -27,7 +27,7 @@
 
 ---
 
-`In V4` We developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more development and designs.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With Portfolio360 V4, you can showcase your work in a more dynamic and visually appealing way
+Many thanks to Chetan Verma for his dedication building previous version, In `V4` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With Portfolio360 `V4`, you can showcase your work in a more dynamic and visually appealing way
 
 <br>❒︎❒︎
 
