@@ -119,9 +119,9 @@ const FooterCard = () => {
 
 
 {/* fetching contributons from Github using gitup api components/GithubContributors*/}
-      <div className="App">
+    {/*   <div className="App">
       <GithubContributors owner="chetanverma16" repo="react-portfolio-template" />
-    </div>
+    </div> */}
         </div>
       </div>
       </div>

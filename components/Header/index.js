@@ -7,7 +7,7 @@ import Button from "../Button";
 import data from "../../data/portfolio.json";
 
 /* optimized - added the internal data search functions 
-you can search pre-indexed json data  */
+you can search pre-indexed data in portfolio  */
 import SearchMe from "../Search/Search";
 
 const Header = ({ handleSkillsScroll, handleCollabScroll, handleWorkScroll, handleAboutScroll, isBlog }) => {

@@ -37,7 +37,7 @@ const WorkCard = ({ img, name, description, onClick, tags }) => {
 
       <div className="flex flex-col  justify-center items-center /* yay:P! */">
         <div className="project-deets">
-         <h1 className=" mt-2 px-1 text-white text-2xl font-medium">
+         <h1 className=" mt-2 px-1  text-2xl font-medium">
           {name ? name : "Project Name"}
         </h1>
 
@@ -45,7 +45,7 @@ const WorkCard = ({ img, name, description, onClick, tags }) => {
 
 
          <h2
-          className={`project-paragraph mt-3 px-1 text-white text-md opacity-50 ${
+          className={`project-paragraph mt-3 px-1 text-md opacity-50 ${
             showMore ? "h-auto" : "h-20 overflow-hidden"
           }`}
         >
@@ -53,14 +53,16 @@ const WorkCard = ({ img, name, description, onClick, tags }) => {
         </h2>
         {description && description.length > 100 && (
           <button
-            className="project-card-btns mt-3 px-14 text-white text-sm font-bold focus:outline-none"
+            className="see-more project-card-btns mt-3 px-5 text-md font-bold focus:outline-none"
             onClick={toggleShowMore}
           >
             {showMore ? "See Less" : "See More"}
+         
+
           </button>
         )}
        
-       <button className=" project-card-btns mt-3 ml-2 text-white text-sm font-bold focus:outline-none" onClick={onClick}>
+       <button className=" see-project project-card-btns mt-3 ml-8 px-5  text-md font-bold focus:outline-none" onClick={onClick}>
         See Project
        </button>
 

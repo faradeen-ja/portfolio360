@@ -22,7 +22,6 @@ import SomeSkills from "../components/SomeSkills/SomeSkills";
 /*   */
 // Local Data
 import data from "../data/portfolio.json";
-import FeedbacksSection from "../components/FeedbacksSection/FeedbacksSection";
 
 export default function Home() {
   // Ref
@@ -40,7 +39,7 @@ export default function Home() {
   const selectedWorks = [
     {
       id: 1,
-      title: "DASHER AI",
+      title: "DASHER ADMIN",
       description: "",
       image: "https://source.unsplash.com/random/800x600",
       link: "#projects",
@@ -75,6 +74,7 @@ export default function Home() {
     },
   ];
 
+/* add more projects */
 
 
 
@@ -90,7 +90,7 @@ export default function Home() {
   const codeCloudSvg = (
     // eslint-disable-next-line react/no-unknown-property
    
-    <svg clipRule="evenodd"  fillRule="evenodd" height="50px" strokeLinejoin="round" viewBox="0 0 30 30" width="50px" xmlns="http://www.w3.org/2000/svg"><g fill="#ffff"  id="Icon"><path d="m12.172 14.286-1.767 5.302c-.131.393.081.818.474.949s.818-.082.949-.474l1.767-5.302c.131-.393-.081-.818-.474-.949s-.818.082-.949.474z"/><path d="m14.202 15.938 1.237 1.237s-1.237 1.236-1.237 1.236c-.292.293-.292.768 0 1.061.293.293.768.293 1.061 0l1.767-1.767c.293-.293.293-.768 0-1.061l-1.767-1.767c-.293-.293-.768-.293-1.061 0-.292.293-.292.768 0 1.061z"/><path d="m8.737 14.877-1.767 1.767c-.293.293-.293.768 0 1.061l1.767 1.767c.293.293.768.293 1.061 0 .292-.293.292-.768 0-1.061l-1.237-1.236s1.237-1.237 1.237-1.237c.292-.293.292-.768 0-1.061-.293-.293-.768-.293-1.061 0z"/><path d="m5.816 17.651c-.167-.589-.018-1.25.447-1.714l1.767-1.767c.683-.683 1.792-.683 2.475 0 .199.199.34.435.423.686l.295-.886c.306-.916 1.298-1.412 2.214-1.107.437.146.778.448.983.823.545-.099 1.129.062 1.55.484 0 0 1.767 1.767 1.767 1.767.451.451.605 1.086.461 1.662.042-.002.083-.005.122-.007.537-.034.881-.103.981-.147 2.029-.888 3.449-2.915 3.449-5.27 0-3.174-2.576-5.75-5.75-5.75-.238 0-.473.015-.706.027-.02.001-.04.003-.06.005-.095.013-.188-.034-.233-.119-.003-.007-.007-.014-.011-.021-.992-1.728-2.856-2.892-4.99-2.892-2.707 0-4.979 1.874-5.578 4.396-.001.007-.003.015-.004.022-.02.094-.093.167-.188.186-.002 0-.004.001-.006.001-2.268.474-3.974 2.487-3.974 4.895 0 2.025 1.207 3.771 2.941 4.556.072.033.279.09.608.118.242.02.589.037 1.017.052z"/></g></svg>
+    <svg clipRule="evenodd"  fillRule="evenodd" height="50px" strokeLinejoin="round" viewBox="0 0 30 30" width="50px" xmlns="http://www.w3.org/2000/svg"><g fill="#000"  id="Icon"><path d="m12.172 14.286-1.767 5.302c-.131.393.081.818.474.949s.818-.082.949-.474l1.767-5.302c.131-.393-.081-.818-.474-.949s-.818.082-.949.474z"/><path d="m14.202 15.938 1.237 1.237s-1.237 1.236-1.237 1.236c-.292.293-.292.768 0 1.061.293.293.768.293 1.061 0l1.767-1.767c.293-.293.293-.768 0-1.061l-1.767-1.767c-.293-.293-.768-.293-1.061 0-.292.293-.292.768 0 1.061z"/><path d="m8.737 14.877-1.767 1.767c-.293.293-.293.768 0 1.061l1.767 1.767c.293.293.768.293 1.061 0 .292-.293.292-.768 0-1.061l-1.237-1.236s1.237-1.237 1.237-1.237c.292-.293.292-.768 0-1.061-.293-.293-.768-.293-1.061 0z"/><path d="m5.816 17.651c-.167-.589-.018-1.25.447-1.714l1.767-1.767c.683-.683 1.792-.683 2.475 0 .199.199.34.435.423.686l.295-.886c.306-.916 1.298-1.412 2.214-1.107.437.146.778.448.983.823.545-.099 1.129.062 1.55.484 0 0 1.767 1.767 1.767 1.767.451.451.605 1.086.461 1.662.042-.002.083-.005.122-.007.537-.034.881-.103.981-.147 2.029-.888 3.449-2.915 3.449-5.27 0-3.174-2.576-5.75-5.75-5.75-.238 0-.473.015-.706.027-.02.001-.04.003-.06.005-.095.013-.188-.034-.233-.119-.003-.007-.007-.014-.011-.021-.992-1.728-2.856-2.892-4.99-2.892-2.707 0-4.979 1.874-5.578 4.396-.001.007-.003.015-.004.022-.02.094-.093.167-.188.186-.002 0-.004.001-.006.001-2.268.474-3.974 2.487-3.974 4.895 0 2.025 1.207 3.771 2.941 4.556.072.033.279.09.608.118.242.02.589.037 1.017.052z"/></g></svg>
 
   );
 
@@ -123,8 +123,7 @@ const starSvg = (
   
 const hexSvg = (
 
-<svg clipRule="evenodd" fillRule="evenodd" height="50px" imageRendering="optimizeQuality" shapeRendering="geometricPrecision" textRendering="geometricPrecision" viewBox="0 0 2250 2100" width="50px" xmlns="http://www.w3.org/2000/svg"><g id="Layer_x0020_1"><path d="m852 1707c-5 0-10-2-15-4l-721-402c-9-6-15-16-15-27v-840c0-11 6-21 15-27l723-403c9-5 20-5 29 0l723 403c9 6 15 16 15 27v841c0 11-6 21-16 26l-724 402c-4 2-9 4-14 4zm516-524c-17 0-30-13-30-30v-581l-499-278c-35-20-6-72 29-53l514 287c10 6 16 16 16 27v598c0 17-14 30-30 30zm-1207 74 691 385 694-385v-806l-693-387-692 387z" fillRule="nonzero"/></g></svg>
-
+<svg id="Layer_1" height="50px" viewBox="0 0 640 630" width="50px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m30.01 144v224a32 32 0 0 0 16 27.713l193.99 112a32 32 0 0 0 32 0l193.99-112a32 32 0 0 0 16-27.713v-224a32 32 0 0 0 -16-27.713l-193.99-112a32 32 0 0 0 -32 0l-193.99 112a32 32 0 0 0 -16 27.713zm64 18.475 161.99-93.525 161.99 93.525v187.05l-161.99 93.525-161.99-93.525z"/></svg>
 )
   
 const abstractSvg = (
@@ -186,6 +185,9 @@ const bracketSvg = (
 
       },
         
+
+
+
       {
         title: "A dev project",
         description: "A salesforce lighting project, all types of support application",
@@ -195,7 +197,7 @@ const bracketSvg = (
         iconSVG: codeSvg
       },
       {
-        title: "Another admin, Eninestien project",
+        title: "Another admin, code project",
         description: "A salesforce automation GPT project code/click",
         url: "https://www.project2.com/",
         iconUrl: "",
@@ -293,15 +295,16 @@ const bracketSvg = (
         
       {
         title: "Real-world on the job projects",
-        description: "Have helped 10000+ of satisfied clients and coleagues in telecommunication and information technology provided B2B, consumers, end-users solutions",
+        description: "Exerience in telecommunication and information technology provided B2B, consumers, end-users solutions",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Time-Management",
+      
+        category: "Leardership",
         iconSVG: timeSvg
       },
       {
         title: "A salesforce automation ",
-        description: "Built a tool for salesforce admins to keep track of recent modified requests, changes and next step solution to org using AI LWC APEX targeting Audit trail API specifically ",
+        description: "Built a tool using SF APIs, this tool uses a solid UX to navigate entire SF in a matter of seconds. forget quick find!",
         url: "https://www.project2.com/",
         iconUrl: "",
         category: "Constributions",
@@ -393,9 +396,12 @@ const bracketSvg = (
           handleCollabScroll={handleCollabScroll}
         />
 
+
+{/* use to update hero profile card, img, IM styles>global.css */}
+<div className="hero-container-profile-card-center">
         <div className="profile-mobile laptop:mt-20 mt-10">
-          <div className="hero-box">
-            <div className="profile">
+          <div className="hero-photo-card">
+            <div className="hero-profile">
               <Image
                 className="profile-photo mobile-small"
                /*  src={myImage} you can upload from your pc or use a CDN link*/
@@ -404,7 +410,17 @@ const bracketSvg = (
                 width={150}
                 height={150}
               />
+              
+              <div className="calendar-socials">
+                 <a href="#">{/*Instant msging > your linkedin, direct ms, messenger msg url */}
+                     <svg height="" viewBox="0 0 32 32" width="50" xmlns="http://www.w3.org/2000/svg"><g id="Layer_6"><g><g><path d="m30 2.625h-28c-1.1 0-2 .9-2 2v17c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-17c0-1.1-.9-2-2-2z"/></g><g><path d="m5.75 23.625v5.75l6-5.75z"/></g><g><circle cx="8.25" cy="9.125" fill="#c9c9" r="2.5"/></g><g><circle cx="15.937" cy="9.125" fill="#c9c" r="2.5"/></g><g><circle cx="23.625" cy="9.125" fill="#eee" r="2.5"/></g><g><path d="m5.75 18.333h20.375v1h-20.375z" fill="#fff"/></g><g><path d="m5.75 14.625h20.375v1h-20.375z" fill="#fff"/></g></g></g></svg>
+                   IM Me
+                 </a>    
             </div>
+              
+            </div>
+
+          
             
           </div>
           <div className="mt-5 ">
@@ -433,28 +449,29 @@ const bracketSvg = (
               {data.headerTaglineFour}
             </h1>
 
-            {/* src ==> bring your own images from local  image folder instead or bring it using a cdn link url domain like pexel, linked cdn or othre cdns*/}
+            {/* src ==> bring your own images from local image folder instead or bring it using a cdn link url domain like pexel, linked cdn or othre cdns*/}
 
             {/* for page preview logo */}
-            <PageLoader />
+         
           </div>
+        
           {/* center along with forks status indicator  */}
           <Socials className="social-align-center mt-2 laptop:mt-5" />
-        </div>
-
-        <div className="hero-tech-photos">
+        </div></div>
+        <div className="
+        ">
           {/* selected work component */}
           <div className="selected-work-container">
             <SelectedWork selectedWorks={selectedWorks} />
           </div>
-
+          <PageLoader />
         </div>
           {/* skills and techStacks section before projects sections */}
 
         {/* skills component */}
-        <div className="container skills-box mx-auto">
+        <div className="skills-related-projects-container mx-auto">
           <h1
-            className="portfolio-card-skills  text-5xl font-bold text-center"
+            className="text-5xl font-bold text-center"
             ref={skillsRef}
           >
             Skills 360°
@@ -473,13 +490,15 @@ const bracketSvg = (
           {/* Add any other components or markup here */}
           <LineCalCollab />
           {/* Add any other components or markup here */}
+
+     
         </div>
      
       
-        <FeedbacksSection />
+       
 
         <div
-          className="mt-10 laptop:mt-30 p-2 laptop:p-0 projects-container"
+          className="laptop:mt-30 p-2 laptop:p-0 projects-container"
           ref={workRef}
         >
           <h1 id="projets" className=" text-5xl font-bold text-center ">

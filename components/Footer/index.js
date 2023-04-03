@@ -36,7 +36,7 @@ const Footer = ({}) => {
             
                     
            
-            <div className=" footer-social-flex mt-64 ">
+            <div className="footer-social-flex mt-64">
               <div className="footer-align-center">
               <Socials />
               </div>

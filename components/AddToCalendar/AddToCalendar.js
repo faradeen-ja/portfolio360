@@ -53,14 +53,14 @@ const AddToCalendar = () => {
 
      <div className ='btn-gradient'>
       <button
-        className="outlook-btn btn bg-black hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="outlook-btn btn  hover:bg-white hover:text-black opacity-95 hover:opacity-100    py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={() => openCalendar(constructOutlookUrl())}
       >
         <span className='add-to-cal-plus'>+</span> Outlook Calendar
       </button>
       </div>
       <button
-        className="apple-btn  hover:bg-white hover:text-black opacity-95 hover:opacity-100 text-white  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+        className="apple-btn  hover:bg-white hover:text-black opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         onClick={() => openCalendar(constructAppleUrl())}
       >
        <span className='add-to-cal-plus'>+</span>  Apple Calendar

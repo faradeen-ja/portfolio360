@@ -1,187 +1,3 @@
-/* import React from "react";
-
-const PortfolioCard = ({ iconUrl, title, paragraph, tags }) => {
-  return (
-    <div className="flex flex-col md:flex-row items-center md:items-start mb-10">
-      <div className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8">
-        <img src={iconUrl} alt="icon" className="w-full h-full object-cover" />
-      </div>
-      <div className="flex-1">
-        <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-600 mb-4">{paragraph}</p>
-        <ul className="flex flex-wrap">
-          {tags.map((tag, index) => (
-            <li
-              key={index}
-              className="mr-2 mb-2 px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-sm"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-};
-
-export default PortfolioCard;
- */
-
-/* import React from "react";
-import { motion } from "framer-motion";
-
-const PortfolioCard = ({ iconUrl, title, paragraph, tags }) => {
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { delay: 0.5 } }
-  };
-
-  return (
-    <motion.div
-      className="flex flex-col md:flex-row items-center md:items-start mb-10"
-      variants={cardVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      <div className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8">
-        <img src={iconUrl} alt="icon" className="w-full h-full object-cover" />
-      </div>
-      <div className="flex-1">
-        <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-600 mb-4">{paragraph}</p>
-        <ul className="flex flex-wrap">
-          {tags.map((tag, index) => (
-            <li
-              key={index}
-              className="mr-2 mb-2 px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-sm"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
-  );
-};
-
-export default PortfolioCard; */
-
-
-/* import React, { useEffect, useRef } from "react";
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
-
-const PortfolioCard = ({ iconUrl, title, paragraph, tags }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    if (inView) {
-      cardRef.current.style.transform = "scaleY(1)";
-    }
-  }, [inView]);
-
-  return (
-    <motion.div
-      className="flex flex-col md:flex-row items-center md:items-start mb-10"
-      ref={ref}
-      initial={{ transform: "scaleX(0)" }}
-      animate={{ transform: "scaleX(1)" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      <div className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8">
-        <img
-          src={iconUrl}
-          alt="icon"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="flex-1" ref={cardRef}>
-        <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
-        <p className="text-gray-600 mb-4">{paragraph}</p>
-        <ul className="flex flex-wrap">
-          {tags.map((tag, index) => (
-            <li
-              key={index}
-              className="mr-2 mb-2 px-3 py-1 bg-gray-200 text-gray-600 rounded-full text-sm"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </motion.div>
-  );
-};
-
-export default PortfolioCard; */
-
-/* 
- import React, { useEffect, useRef, useState } from "react";
-
-const SomeSkills = ({ iconUrl, title, paragraph, tags }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const top = cardRef.current.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      if (top < windowHeight * 0.4) {
-        setIsVisible(true);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
- 
-  return (
-    <div
-      ref={cardRef}
-      className={`flex flex-col md:flex-row items-center md:items-start mb-10 transition-all duration-500 ease-out transform ${
-        isVisible ? "opacity-100 scale-105" : "opacity-0 scale-100"
-      }`}
-    >
-
-    
-      <div className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8 ">
-        <img src={iconUrl} alt="icon" className="w-full h-full object-cover" />
-        
-      </div>
-      <div className="flex-1 skills-flex-wrap">
-        <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
-     
-        <p className="text-gray-500 mb-6">{paragraph}</p>
-        <ul className="flex skills-ul flex-wrap ">
-          {tags.map((tag, index) => (
-            <li
-              key={index}
-              className="skills-li-items mr-2 mb-2 px- py-   text-md"
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
-        
-      </div>
-
-    
-    </div>
-    
-  );
-};
-
-export default SomeSkills; 
- */
-
-
-
 
 import React, { useEffect, useRef, useState } from "react";
 
@@ -203,26 +19,6 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
     };
   }, []);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-
-
  
   return (
     <div
@@ -237,11 +33,11 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
         <img src={iconUrl} alt="icon" className="w-full h-full object-cover" />
         
       </div>
-      <div className="flex-1 skills-flex-wrap">
+      <div className="flex-1 skills-related-projects-div">
         <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
      
-        <p className="text-gray-500 mb-6">{paragraph}</p>
-        <ul className="flex skills-ul flex-wrap ">
+        <p className="skills-paragraph-center text-gray-500 mb-6">{paragraph}</p>
+        <ul className="flex  flex-wrap ">
           {tags.map((tag, index) => (
             <li
               key={index}
