@@ -176,11 +176,12 @@ const bracketSvg = (
     
     relatedProjects: [
       {
-        title: "An admin project",
-        description: "A salesforce project that does something, bring it from 1000 projects",
+        title: "React Portfolio360",
+        description: "Designed & developed a V4 multi features portfolio site.",
         url: "https://www.project1.com/",
         iconUrl: " ",
-        category: "Administration",
+        category: "Frontend",
+        category2: "Design & Development",
         iconSVG: codeCloudSvg
 
       },
@@ -189,19 +190,21 @@ const bracketSvg = (
 
 
       {
-        title: "A dev project",
-        description: "A salesforce lighting project, all types of support application",
+        title: " Custom Object and Workflow Automation",
+        description: "Created and customized objects, validation rules & workflow rules, implemented field updates",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Design & Development",
+        category: "Salesforce",
+        category2: "Administration",
         iconSVG: codeSvg
       },
       {
-        title: "Another admin, code project",
-        description: "A salesforce automation GPT project code/click",
+        title: " Order Management System App",
+        description: "Used lightning app builder & lightning component framework to create custom UI & custom actions",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Technical",
+        category: "Salesforce",
+        category2: "Design, Develop",
         iconSVG: stackSvg
       },
     ],
@@ -215,15 +218,16 @@ const bracketSvg = (
     iconUrl: "https://cdn-icons-png.flaticon.com/512/4961/4961882.png",
     title: "Technologies",
     paragraph:
-      "Proficient in HTML5, CSS, JavaScript (ES6+), Salesforce platform (including Lightning web components and SOQL), React.JS, and popular front-end libraries such as Bootstrap and Tailwind CSS. Experience with Node.js, NPM, Git version control, and cloud services such as AWS.",
+      "Proficient in HTML5, CSS, JavaScript (ES6+), Salesforce platform (including Lightning web components framework, Apex, SFDX), React.JS, and popular front-end libraries such as Bootstrap and Tailwind CSS. Experience with Node.js, NPM, Git version control, and cloud services such as AWS.",
     tags: [
       "HTML5 CSS",
       "JavaScript ES6+",
       "Lightning web components ",
+      "APEX ",
       "Salesforce platform",
       "React.JS",
       "Bootstrap Tailwind CSS",
-      "NODE.JS NPM",
+      "NODE JS NPM",
       "SOQL",
       "GIT",
       "AWS",
@@ -233,28 +237,31 @@ const bracketSvg = (
     relatedProjects: [
       {
         title: "Netflix Clone using react",
-        description: "Cloning netflix design with React and GraphQL",
+        description: "Cloning netflix design with React, GraphQL & AstraDB",
         url: "https://www.project1.com/",
         iconUrl: " ",
-        category: "Design & Development",
+        category: "Workshop",
+        category2: "Frontend & Backend",
         iconSVG: starSvg
 
       },
         
       {
-        title: "This React Portfolio V-4-2023",
-        description: "A collaborated Porfolio project in React Next Tailwind CSS",
+        title: "React Portfolio360",
+        description: "Designed & developed a V4 multi features portfolio site using react next tailwind frameworks",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Design & Development",
+        category: "Frontend",
+        category2: "Design & Development",
         iconSVG: hexSvg
       },
       {
-        title: "Reality360",
-        description: "A Salesforce Real Estate Management system, keep the deals running.",
+        title: "Salesforce AdminOps Find360",
+        description: "Designed & developed an AppExchange App that allows users to access the Salesforce Quick Find.",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Low-code LWC & Administration",
+        category: "Salesforce",
+        category2: "Design & Development",
         iconSVG: abstractSvg
       },
     ],
@@ -282,11 +289,12 @@ const bracketSvg = (
 
     relatedProjects: [
       {
-        title: "React Portfolio",
-        description: "Collaborated in the project with high creativity, adaptability & critical thinking effective time management. ",
+        title: "React Portfolio360",
+        description: "Designed & developed a V4 --multi features portfolio site. ",
         url: "https://www.project1.com/",
         iconUrl: " ",
-        category: "Collaboration & Communication",
+        category: "Frontend",
+        category2: "Collaboration & Communication",
         iconSVG: collabSvg
 
       
@@ -298,16 +306,17 @@ const bracketSvg = (
         description: "Exerience in telecommunication and information technology provided B2B, consumers, end-users solutions",
         url: "https://www.project2.com/",
         iconUrl: "",
-      
         category: "Leardership",
+        category2: "Team-work",
         iconSVG: timeSvg
       },
       {
-        title: "A salesforce automation ",
-        description: "Built a tool using SF APIs, this tool uses a solid UX to navigate entire SF in a matter of seconds. forget quick find!",
+        title: "Salesforce AdminOps Find360",
+        description: "Designed & developed an AppExchange App that allows users to access the Salesforce Quick Find.",
         url: "https://www.project2.com/",
         iconUrl: "",
-        category: "Constributions",
+        category: "Creativity",
+        category2: "critical thinking",
         iconSVG: bracketSvg
       },
     ],

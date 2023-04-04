@@ -57,7 +57,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
               href={project.url}
               target={"blank"}
               rel={"norefferrer"}
-              className="some-skills-project-cards relative  md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl"
+              className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl"
 
               
             >
@@ -81,9 +81,13 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                 <h3 className="some-skills-project-cards-title text-lg font-medium mb-1">
                   {project.title}
                 </h3>
+                
                 <p className="some-skills-project-desc">{project.description}</p>
+
+                <div className="cats-flex-wrap flex flex-wrap">
                 <p className="some-skills-project-cats text-md text-gray-400">{project.category}</p>
-            
+                <p className="some-skills-project-cats text-md text-gray-400">{project.category2}</p>
+                </div>
 
               </div>
             </a>
