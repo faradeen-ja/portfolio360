@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import calendarImage from '/public/images/fara.jpg'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AddToCalendar from "../AddToCalendar/AddToCalendar";
 import { useSpring, animated } from "react-spring";
 import ExperienceLine from "../ExperienceLine/ExperienceLine";
 import FeedbacksSection from "../FeedbacksSection/FeedbacksSection";
+
+
 
 /* all styles in styles/global.css */
 /* this component has many components */
@@ -126,7 +127,7 @@ const SquareCards = () => {
     <div ref={ref} className="areas-of-work-container  my-8">
       
       {/* the 4 cards in collabs section */}
-       <div className="collabs-container grid grid-cols-4 md:grid-cols-4 gap-6  m-auto md:self-center" ref={ref}>
+       <div className="collabs-container  grid grid-cols-4 md:grid-cols-4 gap-6  m-auto md:self-center" ref={ref}>
         
        <div className="collab-paragraph  md:mr-12 flex flex-col md:flex-row  justify-center">
         <h1 className="areas-of-collab-title   text-5xl font-bold text-gray-800 mb-11 md:mb-0 md:mr-4">Some Areas I Collab</h1>
@@ -136,7 +137,10 @@ const SquareCards = () => {
          development, management, and leadership. By prioritizing communication, organization, and discipline, 
          I optimize my workflow and consistently exceed expectations.
         </p>
-      
+        <div className="exp-line">
+    <ExperienceLine /> {/* confetti line */}
+
+    </div>
       </div>
 
       <div className="collab-cards-box grid grid-cols-2 md:grid-cols-2    md:self-center">
@@ -164,61 +168,60 @@ const SquareCards = () => {
 
     </div>
 
-    <div className="exp-line">
-    <ExperienceLine /> {/* confetti line */}
-      <FeedbacksSection />
-
-    </div>
+  
 
 
 {/* time is gold, video parent container */}
+<div className="add-to-calendar-primary-container">
+
+
 <div className="add-to-cal-parent-items-center">
+    {/* time is gold box */}
+    <div className=" add-to-cal-time-is-gold-box">
+    <HangingBox>
+  <AnimatedH1>
+   
 
-{/* time is gold box */}
-  <HangingBox>
-      
-  <AnimatedH1 className="add-to-calendar-title">
     <span className='time-white'>Time is</span> <span className='gold-span'>G🕤LD</span><br></br> <span className='time-white'>its gold to meet </span><br></br>
-    <span className="you-span text-6xl font-bold gold-span"> Y🕤U! </span>
-
-    <svg enableBackground="new 0 0 512 512" height="155" viewBox="0 0 512 512" width="" xmlns="http://www.w3.org/2000/svg"><g id="_x32__x2C__right_x2C__forward_x2C__arrow_x2C__next"><g><g><path d="m356 76 100 180-100 180h-110l100-180-100-180z" fill="#fbb400"/><path d="m166 76 100 180-100 180h-110l100-180-100-180z" fill="#ed6f6f"/><g fill="#2169ac"><path d="m166 441h-110c-1.771 0-3.411-.938-4.31-2.465-.898-1.526-.921-3.415-.061-4.963l98.651-177.572-98.651-177.572c-.86-1.549-.837-3.437.061-4.964s2.538-2.464 4.31-2.464h110c1.816 0 3.489.984 4.371 2.572l100 180c.839 1.51.839 3.346 0 4.856l-100 180c-.882 1.588-2.555 2.572-4.371 2.572zm-101.502-10h98.561l97.222-175-97.223-175h-98.56l95.873 172.572c.839 1.51.839 3.346 0 4.856z"/><path d="m356 441h-110c-1.771 0-3.411-.938-4.31-2.465-.898-1.526-.921-3.415-.061-4.963l98.651-177.572-98.651-177.572c-.86-1.549-.837-3.437.061-4.964s2.538-2.464 4.31-2.464h110c1.816 0 3.489.984 4.371 2.572l100 180c.839 1.51.839 3.346 0 4.856l-100 180c-.882 1.588-2.555 2.572-4.371 2.572zm-101.503-10h98.561l97.222-175-97.222-175h-98.561l95.873 172.572c.839 1.51.839 3.346 0 4.856z"/></g></g></g></g></svg>
+    <span className="you-span text-5xl font-bold gold-span"> Y🕤U! </span>
+  
   </AnimatedH1>
-
- 
   </HangingBox>
+    </div>
+
   
 {/* calendar box */}
-<div className="calendar-box">
-  <video className="cal-video" width={400} height={0} controls>
-  <source src="https://www.example.com/video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-  </video>
 
+<div className="calendar-box">
   <div className="calendar-box-title-msg">
     <AnimatedH1 className="">
       
        Let's Talk!  <br></br>
 
    <span className="meeting-span">Schedule a meeting</span>
-   
   </AnimatedH1>
-  
-  <div className="calendar-socials">
-    <a href="#">{/*Instant msging > your linkedin, direct ms, messenger msg url */}
-      <svg height="" viewBox="0 0 32 32" width="50" xmlns="http://www.w3.org/2000/svg"><g id="Layer_6"><g><g><path d="m30 2.625h-28c-1.1 0-2 .9-2 2v17c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2v-17c0-1.1-.9-2-2-2z"/></g><g><path d="m5.75 23.625v5.75l6-5.75z"/></g><g><circle cx="8.25" cy="9.125" fill="#c9c9" r="2.5"/></g><g><circle cx="15.937" cy="9.125" fill="#c9c" r="2.5"/></g><g><circle cx="23.625" cy="9.125" fill="#eee" r="2.5"/></g><g><path d="m5.75 18.333h20.375v1h-20.375z" fill="#fff"/></g><g><path d="m5.75 14.625h20.375v1h-20.375z" fill="#fff"/></g></g></g></svg>
-     IM Me
-   
-    </a>
- 
-    
+
+  <div className="cal-img-box">
+    <a href="https://www.linkedin.com/in/faradeen/">
+  <Image
+      src='https://media.licdn.com/dms/image/D5603AQGRTHIbNliotw/profile-displayphoto-shrink_400_400/0/1679771124043?e=1686182400&v=beta&t=5eF2DMOgKMQ4pHWMabW-PhSWZFdI8cOjdXOtcKhy7tI'
+      className='calImage'
+      height={60}
+      width={60}
+      >
+
+  </Image>
+  </a>
   </div>
 
-  
   </div>
   <AddToCalendar />
 </div>
 
 
 </div>
-</div>);}
+</div>
+<FeedbacksSection />
+</div>
+);}
 export default SquareCards;

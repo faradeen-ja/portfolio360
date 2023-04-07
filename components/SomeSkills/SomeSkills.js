@@ -29,11 +29,12 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
     >
 
     
-      <div className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8 ">
+      <div className="w-28 h-28 md:w-2 md:h-24 mr-6 md:mr-8 ">
         <img src={iconUrl} alt="icon" className="w-full h-full object-cover" />
         
       </div>
       <div className="flex-1 skills-related-projects-div">
+        
         <h2 className="text-xl md:text-2xl font-bold mb-2">{title}</h2>
      
         <p className="skills-paragraph-center text-gray-500 mb-6">{paragraph}</p>
@@ -82,7 +83,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                   {project.title}
                 </h3>
                 
-                <p className="some-skills-project-desc">{project.description}</p>
+                <p className="some-skills-project-desc text-gray-500">{project.description}</p>
 
                 <div className="cats-flex-wrap flex flex-wrap">
                 <p className="some-skills-project-cats text-md text-gray-400">{project.category}</p>

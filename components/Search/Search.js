@@ -65,11 +65,6 @@ const SearchMe = () => {
     
 
     <div className={styles.container}>
-      <p className='font-bold'>🔍</p>
-      
-
-
-
       <input
         className={`${styles.input} focus:ring-purple-600  placeholder-transition`}
         type="text"

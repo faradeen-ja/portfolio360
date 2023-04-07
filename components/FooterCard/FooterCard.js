@@ -70,22 +70,22 @@ const FooterCard = () => {
 
 
           
-            <a className="versions-box" href="#">
+            <a className="versions-box" href="https://github.com/chetanverma16" target={'_blank'} rel="noreferrer">
           {/* before versins developer image*/}
           <p>Chetan V</p>
       
            <p className="before-p">V:1-3 </p>
          
-        
+         
            </a>
 
 
 
           {/* after versions developer image */}
-          <a className="versions-box" href="#">
+          <a className="versions-box" href="  https://github.com/faradeen-ja" target={'_blank'} rel="noreferrer">
           <p className="text-center">FJ</p>
     
-           <p className="after-p">V:4^</p>
+           <p className="after-p">V:4</p>
 
            </a>
 

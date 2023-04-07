@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const FeedbackSlide = ({ title, titleSpan, imageSrc, content, icon, iconLinkedin }) => {
+const FeedbackSlide = ({ title, titleSpan, imageSrc, content, icon, iconLinkedin, linkedinUrl }) => {
   return (
   
     <div className="feedback-slide">
@@ -17,7 +17,7 @@ const FeedbackSlide = ({ title, titleSpan, imageSrc, content, icon, iconLinkedin
             className="rounded-full h-10 w-10 mr-4"
           />
   
-          <h2 className="text-lg font-bold">
+          <h2 className="text-lg font-bold text-black">
             {title} <br></br>{" "}
             <span className="feedback-span-gray ">{titleSpan}</span>
           </h2>
@@ -25,17 +25,16 @@ const FeedbackSlide = ({ title, titleSpan, imageSrc, content, icon, iconLinkedin
         <p className="text-gray-700">{content}</p>
       {/*   <p className="feekback-linkedin">From Linkedin</p> */}
 
-      <div className="feedback-linkedin flex ">
-      <img
-            src={icon}
-            alt={`${icon} image`}
-            className="icon rounded-full h-10 w-10 mr-4"
-          />
+      <div className="feedback-linkedin  flex ">
+      
+          <a href={linkedinUrl} target="_blank" rel="noreferrer">
           <img
             src={iconLinkedin}
             alt={`${iconLinkedin} image`}
-            className="icon rounded-full h-10 w-10 mr-4"
+            className="icon rounded-full h-10 w-10 mr-"
           />
+          </a>
+        
       </div>
       </div>
 
@@ -81,13 +80,13 @@ const FeedbacksSection = () => {
 
   const feedbacks = [
     {
-      title: "Client's/network name",
+      title: "Taweer Majid",
       titleSpan: "General Surgeon at Detar Healthcare System",
       imageSrc: "https://media.licdn.com/dms/image/C4E03AQH-FfSd0CUGvA/profile-displayphoto-shrink_100_100/0/1563662809431?e=1683763200&v=beta&t=7sMxExz0H0oj7ESi7zaea-9ffvMpRaTeybNXUheHgyk",
       content:
-        "lurem text, your client or professional feedbacks here.",
-        icon: "https://cdn-icons-png.flaticon.com/512/5582/5582932.png",
-        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
+        "Excellent customer service, knowledge, efficiency. Extremely personable. This guy will go far.",
+        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png",
+        linkedinUrl: "https://www.linkedin.com/in/faradeen/details/recommendations/?detailScreenTabIndex=0"
 
     },
     {
@@ -95,18 +94,17 @@ const FeedbacksSection = () => {
       titleSpan: "Project Manager",
       imageSrc: "https://media.licdn.com/dms/image/C5103AQHQGZr3etEEMQ/profile-displayphoto-shrink_100_100/0/1517340343978?e=1683763200&v=beta&t=v4cghmEVyWzpTzefFWpXMOhhLk_wYoEsbmzN-2Kkvh0",
       content:
-        "lurem text, your client or professional feedbacks here.",
-        icon: "https://cdn-icons-png.flaticon.com/512/5582/5582932.png",
-        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
+        "Faradeen is a well spoken and down to earth. He help me at *** to get my porting issue resolved nicely. He went to beyond his extent to get the job done. Happy with his service.",
+        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png",
+        linkedinUrl: "https://www.linkedin.com/in/faradeen/details/recommendations/?detailScreenTabIndex=0"
     },
     {
-      title: "Jevani Patel ",
+      title: "Anita Ticak",
       titleSpan: "Interim Director Cornea & Contact Lens",
       imageSrc: "https://media.licdn.com/dms/image/C4E03AQEab3IUf9FxBA/profile-displayphoto-shrink_100_100/0/1516438336110?e=1683763200&v=beta&t=VcMTpXfQhcED8DZQH1iToYHgwkvCdkkYqdY5EOl3EIc",
-      content:
-        "Great interaction and communication! Very helpful and knowledgeable.",
-        icon: "https://cdn-icons-png.flaticon.com/512/5582/5582932.png",
+      content: "Great interaction and communication! Very helpful and knowledgeable.",
         iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png",
+        linkedinUrl: "https://www.linkedin.com/in/faradeen/details/recommendations/?detailScreenTabIndex=0"
 
     },
     {
@@ -114,9 +112,18 @@ const FeedbacksSection = () => {
       titleSpan: "Regional Financial Manager",
       imageSrc: "https://media.licdn.com/dms/image/D5603AQE6pYY-2n5fFw/profile-displayphoto-shrink_100_100/0/1676244132177?e=1683763200&v=beta&t=Gp8tefYm_xWj9Pcqq7aLuj9DaA7QRxft62ZaoUebkkQ",
       content:
-        "lurem text, your client or professional feedbacks here.",
-        icon: "https://cdn-icons-png.flaticon.com/512/5582/5582932.png",
-        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
+        "Faradeen was personable, well-spoken, and showed a genuine customer service orientation. He has strong subject matter knowledge and communicates this clearly at the right level to his customers.",
+        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png",
+        linkedinUrl: "https://www.linkedin.com/in/faradeen/details/recommendations/?detailScreenTabIndex=0"
+    },
+    {
+      title: "Sacha Lazarre",
+      titleSpan: "Director of Employee Engagement",
+      imageSrc: "https://media.licdn.com/dms/image/C4E03AQHnXci5gC7wVw/profile-displayphoto-shrink_100_100/0/1562955768191?e=1686182400&v=beta&t=TKhDCWBMlAbIDT0snYSTrHJ8K90gcdJRGMrbiA3AyNU",
+      content:
+        "Had the pleasure to meet Faradeen and was impressed with his approachability and knowledge of product and services. He asked the right questions and listened well in order to recommend the best solutions to my problems.",
+        iconLinkedin: "https://cdn-icons-png.flaticon.com/512/2504/2504923.png",
+        linkedinUrl: "https://www.linkedin.com/in/faradeen/details/recommendations/?detailScreenTabIndex=0"
     }
 
     /* add more feedbacks here */
