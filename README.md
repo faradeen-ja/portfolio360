@@ -42,7 +42,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
   <br>
 
 <p align="center" >
-  <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/8ea3b90f7becef6b09e9f3f46d8e73c102e380a4/V4-DEMO2.gif" alt="DEMO" style="border-radius: 20px;" />
+  <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/1be5d1ce2d3debf690cccfa1ff36f8c63eaf5f2f/v4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
 </p>
 
 ### Tutorials
