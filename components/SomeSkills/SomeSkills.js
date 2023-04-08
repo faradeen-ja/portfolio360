@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useEffect, useRef, useState } from "react";
 
 const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {

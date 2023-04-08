@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import Head from "next/head";
 import Router, { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
