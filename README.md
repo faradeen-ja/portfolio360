@@ -5,7 +5,7 @@
    <img src="https://cdn-icons-png.flaticon.com/512/1053/1053324.png" alt="Tailwind CSS" width="35" height="35" />
 
 
-[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://google.com) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
+[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://main--portfolio360.netlify.app) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
 <a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
@@ -56,7 +56,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
   What features added to V4?
   </summary>
   
-  Your content goes here...
+   content goes here...
   
 </details>
 
