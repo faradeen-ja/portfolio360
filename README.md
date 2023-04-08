@@ -45,6 +45,23 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
   <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/1be5d1ce2d3debf690cccfa1ff36f8c63eaf5f2f/v4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
 </p>
 
+<p align="center">
+<img src="https://cdn-icons-png.flaticon.com/512/1665/1665680.png"
+" alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
+
+</p>
+
+<details>
+  <summary>
+  What features added to V4?
+  </summary>
+  
+  Your content goes here...
+  
+</details>
+
+
+
 ### Tutorials
 
 COMING SOON!
