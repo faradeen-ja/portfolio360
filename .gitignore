@@ -35,3 +35,5 @@ yarn-error.log*
 # salesforce
 .sfdx
 .sfdc
+# Local Netlify folder
+.netlify

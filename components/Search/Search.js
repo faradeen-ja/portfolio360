@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useState, useEffect } from "react";
 import Fuse from "fuse.js";
 import skillsData from "/components/Search/skillsData.json";
@@ -106,6 +108,7 @@ const SearchMe = () => {
           {searchResults.map((result) => (
             <div key={result.item.id}>
               <h2 className={styles.skillName}>
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   className={styles.skillIcon}
                   src={result.item.icon}

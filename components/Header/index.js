@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
@@ -76,7 +78,9 @@ const Header = ({
                     onClick={() =>
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
+                  // eslint-disable-next-line react/jsx-no-comment-textnodes
                   >
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       className="h-6"
                       src={`/images/${

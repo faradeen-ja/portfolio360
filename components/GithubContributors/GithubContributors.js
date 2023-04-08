@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState, useEffect } from "react";
 
 /* for styles go to GithubContributors/GithubContributors.css */
@@ -39,7 +40,9 @@ const GithubContributors = ({ owner, repo }) => {
       <h2>Top 10 Contributors</h2>
       <ul className="contributors-list">
         {contributors.map((contributor) => (
+          // eslint-disable-next-line react/jsx-no-comment-textnodes
           <li key={contributor.id} className="contributor-card">
+            // eslint-disable-next-line @next/next/no-img-element, @next/next/no-img-element
             <img
               src={contributor.avatarUrl}
               alt={contributor.login}

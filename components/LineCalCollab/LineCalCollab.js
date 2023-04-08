@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -181,7 +183,7 @@ const SquareCards = () => {
           <div className="calendar-box">
             <div className="calendar-box-title-msg">
               <AnimatedH1 className="">
-                Let's Talk! <br></br>
+                Let&lsquo;s Talk! <br></br>
                 <span className="meeting-span">Schedule a meeting</span>
               </AnimatedH1>
 

@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -24,6 +26,7 @@ const ServiceCard = ({ title, description, imgSrc, href, icons }) => {
         } hover:scale-105 link`}
       >
         <div className=" w-full h-64 bg-gray-300 flex  items-center justify-center">
+          // eslint-disable-next-line @next/next/no-img-element
           <img
             src={imgSrc}
             alt={title}

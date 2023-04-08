@@ -1,13 +1,28 @@
 {
-  "name": "react-portfolio-template",
+  "name": "portfolio360-react-next-v4",
   "version": "4.0",
-  "private": true,
+  "description": "<div align=\"center\" style=\"pointer-events: none;\">",
+  "main": "next.config.js",
+  "directories": { 
+    "lib": "lib"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faradeen-ja/portfolio360-react-next-v4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faradeen-ja/portfolio360-react-next-v4/issues"
+  },
+  "homepage": "https://github.com/faradeen-ja/portfolio360-react-next-v4#readme",
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "api": "^5.0.7",
@@ -31,7 +46,7 @@
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.1",
     "net": "^1.0.2",
-    "next": "12.1.6",
+    "next": "^12.1.6",
     "next-connect": "^0.13.0",
     "next-themes": "^0.2.0",
     "openai": "^3.2.1",
@@ -42,6 +57,7 @@
     "react-chat-widget": "^3.1.4",
     "react-confetti": "^6.1.0",
     "react-datepicker": "^4.8.0",
+    "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-icons": "^4.8.0",
     "react-intersection-observer": "^9.4.2",
