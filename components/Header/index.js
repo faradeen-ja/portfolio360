@@ -80,7 +80,6 @@ const Header = ({
                     }
                   // eslint-disable-next-line react/jsx-no-comment-textnodes
                   >
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       className="h-6"
                       src={`/images/${
