@@ -41,7 +41,6 @@ const Header = ({
                 {/* an interacive portfolio search function,  styles in css module file */}
               </h1>
 
-              
               {/* STYLES IN GLOBAL.CSS */}
               {/* SEARCH ICON SVG, CAN BE ALSO REFACTORED TO USE DYNAMIC SVG IMPORT */}
               <div className=" search-svg flex">
@@ -51,7 +50,6 @@ const Header = ({
                   viewBox="0 0 16 16"
                   width="45"
                   xmlns="http://www.w3.org/2000/svg"
-              
                 >
                   <linearGradient
                     id="New_Gradient_Swatch"
@@ -174,9 +172,8 @@ const Header = ({
         >
           {name}.
         </h1>
-            
 
-            {/* STYLES IN GLOBAL.CSS */}
+        {/* STYLES IN GLOBAL.CSS */}
         {/* SEARCH ICON SVG, CAN BE ALSO REFACTORED TO USE DYNAMIC SVG IMPORT */}
         <div className="search-desktop-positioning search-svg flex">
           <svg

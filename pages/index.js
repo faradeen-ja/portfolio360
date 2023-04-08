@@ -604,7 +604,7 @@ export default function Home() {
           </div>
         )}
 
-     {/*    <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+        {/*    <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
           <h1 className="about-title tablet:m-10 text-5xl text-bold">
             🐱About
           </h1>

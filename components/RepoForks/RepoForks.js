@@ -31,11 +31,7 @@ const RepoForks = ({ repository }) => {
 
   return (
     <div>
-      <a
-        href="https"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a href="https" target="_blank" rel="noreferrer">
         <p>⊶⊸ Forks: {forks}</p>
       </a>
     </div>

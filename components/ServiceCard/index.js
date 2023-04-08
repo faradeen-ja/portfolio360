@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-
-
-
-
 const ServiceCard = ({ title, description, imgSrc, href, icons }) => {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState();
@@ -22,11 +18,17 @@ const ServiceCard = ({ title, description, imgSrc, href, icons }) => {
     <a href={href} target="_blank" rel="noreferrer">
       <div
         className={`f-p-ul-box w-full p-2 mob:p-4 rounded-lg transition-all ease-out duration-300 ${
-          mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-slate-50"
+          mounted && theme === "dark"
+            ? "hover:bg-slate-800"
+            : "hover:bg-slate-50"
         } hover:scale-105 link`}
       >
         <div className=" w-full h-64 bg-gray-300 flex  items-center justify-center">
-          <img src={imgSrc} alt={title} className="w-full h-full object-cover" />
+          <img
+            src={imgSrc}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="p-4">
           <h1 className="text-beige-900 font-bold text-2xl">{title}</h1>
@@ -44,11 +46,7 @@ const ServiceCard = ({ title, description, imgSrc, href, icons }) => {
   );
 };
 
-
 export default ServiceCard;
-
-
-
 
 /* 
 import React, { useEffect, useState } from "react";
@@ -167,8 +165,6 @@ const ServiceCard = ({ title, description, imgSrc, href, icons }) => {
 
 export default
  */
-
-
 
 /* import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";

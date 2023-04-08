@@ -1,6 +1,4 @@
-import { useState, useEffect } from 'react';
-
-
+import { useState, useEffect } from "react";
 
 /* for styles go to GithubContributors/GithubContributors.css */
 /* Using github api to fetch repository contributions */
@@ -10,19 +8,25 @@ const GithubContributors = ({ owner, repo }) => {
 
   useEffect(() => {
     const fetchContributors = async () => {
-      const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contributors?per_page=10`);
+      const response = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contributors?per_page=10`
+      );
       const data = await response.json();
 
       // Fetch profile photos for each contributor
-      const contributorsWithPhotos = await Promise.all(data.map(async (contributor) => {
-        const userResponse = await fetch(`https://api.github.com/users/${contributor.login}`);
-        const userData = await userResponse.json();
-        return {
-          id: contributor.id,
-          login: contributor.login,
-          avatarUrl: userData.avatar_url
-        };
-      }));
+      const contributorsWithPhotos = await Promise.all(
+        data.map(async (contributor) => {
+          const userResponse = await fetch(
+            `https://api.github.com/users/${contributor.login}`
+          );
+          const userData = await userResponse.json();
+          return {
+            id: contributor.id,
+            login: contributor.login,
+            avatarUrl: userData.avatar_url,
+          };
+        })
+      );
 
       setContributors(contributorsWithPhotos);
     };
@@ -36,7 +40,11 @@ const GithubContributors = ({ owner, repo }) => {
       <ul className="contributors-list">
         {contributors.map((contributor) => (
           <li key={contributor.id} className="contributor-card">
-            <img src={contributor.avatarUrl} alt={contributor.login} className="contributor-photo" />
+            <img
+              src={contributor.avatarUrl}
+              alt={contributor.login}
+              className="contributor-photo"
+            />
             <div className="contributor-info">
               <span className="contributor-username">{contributor.login}</span>
             </div>
