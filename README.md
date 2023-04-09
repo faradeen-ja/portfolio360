@@ -52,13 +52,107 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
 </p>
 
 <details>
-  <summary>
-  What features added to V4?
-  </summary>
+  <summary>Using the Repository as a Portfolio Site?</summary>
+  If you would like to use this repository as your personal portfolio site, follow these steps to make changes and modifications that suit your needs:
+  ### Easy deploy
+   1. Click the "Deploy to Netlify" button.
+      <details>
+      <summary>
+      Show me GUI
+      </summary>
+      ▶️gif here
+      </details>
+      
+      This will create a repository copy NOT fork! for you under the copied repository on your GitHub and a subdomain site name on Netlify.
+      
+  ### Build + deploy advanced
+   1. Fork the repository 
+   2. Clone or download the zip file and import your forked repository into your preferred integrated development environment (IDE), such as VS Code.
+   3. Start coding and modifying according to your needs.
+   4. Add your modifications using the "git add" command.
+   5. Commit your changes using "git commit -m 'message'".
+   6. Push your changes using "git push origin main".
+   7. Use VS Code's source control GUI or command line interface (CLI) to perform all of the above.
+   8. build Deploy your changes to Netlify.
+
+  ### Click deploy easy
+  deploy button 
   
-   content goes here...
+       <details>
+      <summary>
+      One click deploy
+      </summary>
+      ▶️show steps in GUI png
+      </details>
+
+  ### Code deploy advanced
+      <details>
+      <summary>
+      CLI build/deploy
+      </summary>
+
+      ## Install netlify CLI
+      In vscode `cloned repo` directory run:
+      ```npm install -g netlify-cli```
+      ## Run the app in development mode
+      Install dependencies 
+      ```npm install```
+      If faced peer deps and deps conflict during npm install run `npm install --force`
+      this will force the deps installation but with all conflicts, since we are using `yarn.lock` to fix this you may try running `yarn install` as well to update `yarn.lock` file or try installing any existing deps conflict indiviually. 
+
+      ## Start the App 
+      ```npm run dev or netlify dev```
   
+
+      ## Connect to your netlify
+      Everything looks good? Shutdown dev mode with `Ctrl+C`
+      ```1 netlify login```
+      Logs in to your netlify account
+
+      ```2 netlify sites:create```
+      It's important to create site name on netlify otherwise deployment wont proceed.
+
+      ```3 netlify init```
+      Initializes your new Netlify site in the current directory.
+
+      ## Build / Deploy
+      ```netlify build--prod``
+      Builds your site for production
+
+      ```netlify open:site```
+      Opens your site on the browser
+
+
+
+      </details>
+
+
+
+    You're done!
 </details>
+
+<details>
+  <summary>Using the Repository for Contributions?</summary>
+
+  If you have any good pull requests (PRs) to enhance this repository further or have found any issues, please follow these steps:
+  Fork this repository.
+    Clone the repository or download the zip file and import it into your preferred IDE.
+    Start coding, debugging, and enhancing.
+    Your IDE should automatically find the remote GitHub repository in source control. Check the top left corner on your VS Code panel.
+    If it does not, connect the repository using the GUI or CLI (add remote, copy the forked repository link to the repo, and paste in the command palette).
+    Connect the repository using the CLI with "git add remote origin <URL of repo>".
+    Before committing and pushing, create a new branch using the GUI or CLI.
+    You can now make changes to your code and commit them to the new branch using standard Git commands such as "git add", "git commit", and "git push".
+    For example, use "git push yourBranchName main" to push new changes to your own forked repository.
+    Congratulations, you are close to your first PR!
+    Next, go to the original repository and open a PR. Choose your branch name against head/main to compare, double-check everything, and click "Create pull request".
+  In summary, you should open a pull request on the original repository when you want to contribute changes made in your forked repository back to the original repository.
+  If you are using the repository as your own portfolio site, a PR is not necessary.
+  Thank you!
+
+</details>
+
+
 
    [![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
    
