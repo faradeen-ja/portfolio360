@@ -6,20 +6,20 @@
 
 
 [ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://google.com) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
+<a href="https://github.com/faradeen-ja/portfolio360/blob/main/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/faradeen-ja/portfolio360?style=round" alt="portfolio360 license"/>
 </a>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/graphs/contributors">
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/faradeen-ja/portfolio360-react-next-v4" />
+<a href="https://github.com/faradeen-ja/portfolio360/graphs/contributors">
+<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/faradeen-ja/portfolio360" />
 </a>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/fork" target="blank">
-<img src="https://img.shields.io/github/forks/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4"/>
+<a href="https://github.com/faradeen-ja/portfolio360/fork" target="blank">
+<img src="https://img.shields.io/github/forks/faradeen-ja/portfolio360?style=round" alt="portfolio360"/>
 </a>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/issues">
-<img alt="Issues" src="https://img.shields.io/github/issues/faradeen-ja/portfolio360-react-next-v4?color=0088ff" />
+<a href="https://github.com/faradeen-ja/portfolio360/issues">
+<img alt="Issues" src="https://img.shields.io/github/issues/faradeen-ja/portfolio360?color=0088ff" />
 </a>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/pulls">
-<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/faradeen-ja/portfolio360-react-next-v4?color=0088ff" />
+<a href="https://github.com/faradeen-ja/portfolio360/pulls">
+<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/faradeen-ja/portfolio360?color=0088ff" />
 </a>
 <a href="https://discord.gg/jjuier" target="blank">
 <img src="https://img.shields.io/discord/serveridhere?label=Join%20Community&logo=discord&style=round" alt="join discord community"/>
@@ -42,7 +42,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
   <br>
 
 <p align="center" >
-  <img src="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/1be5d1ce2d3debf690cccfa1ff36f8c63eaf5f2f/v4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
+  <img src="https://github.com/faradeen-ja/portfolio360/blob/1be5d1ce2d3debf690cccfa1ff36f8c63eaf5f2f/v4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
 </p>
 
 ### Tutorials
