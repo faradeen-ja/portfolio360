@@ -27,7 +27,7 @@
 
 ---
 
-Many thanks to Chetan Verma for his dedication building previous version, In `V4` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With Portfolio360 `V4`, you can showcase your work in a more dynamic and visually appealing way
+Many thanks to Chetan Verma for his dedication building previous version, In my personal `portfolio360` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With `Portfolio360`, you can showcase your work in a more dynamic and visually appealing way
 
 <br>❒︎❒︎
 
@@ -87,8 +87,11 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
    <summary>Show me GUI</summary>
    gif here
    </details>
-    This will create a repository copy NOT fork! for you under the copied repositories on your GitHub and a subdomain site name on Netlify.
-    you can then import your own copy repo into VSCode to commit and push your changes for your personnal portfolio site, Not contributions!
+   
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360)
+      
+This will create a repository copy NOT fork! for you under the copied repositories on your GitHub and a subdomain site name on Netlify.
+you can then import your own copy repo into VSCode to commit and push your changes for your personnal portfolio site, Not contributions!
  ____
  
  ###  <img src="https://cdn-icons-png.flaticon.com/512/8099/8099324.png" alt="Version 4" width="30" height="30" align="center" /> 3. Deploy via CLI   
@@ -134,20 +137,22 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
      netlify open:site
    Opens your site on the browser
 
-
-  Great job, you developed, built & deployed your personal portfolio site!
-    
+ <p align="center" >
+  <img src="https://cdn-icons-png.flaticon.com/512/4245/4245656.png" width="80" height="80" alt="congrats"/>
+  <p align="center">✅Great job, you developed, built & deployed your personal portfolio site!</p>
+</p>
 
 </detials>
 </details>
 
-  
+
+
 
 
 <details>
   <summary>Using the Repository for Contributions?</summary>
 
-If you have any good pull requests (PRs) to enhance this repository further or have found any issues, please follow these steps:
+If you have any pull requests in mind to enhance this repository further or have found any issues, please follow these steps:
 1. Fork this repository.
 2. Clone the repository or download the zip file and import it into your preferred IDE.
 3. Run `yarn install` or `npm install` or `npm install --force` for dependencies.
@@ -159,10 +164,12 @@ If you have any good pull requests (PRs) to enhance this repository further or h
   
 6. ✅If not already, connect the remote repository using the explorer panel or CLI add remote, copy the forked repository link and paste it into the command palette. 
 <details>
-Show me
 <summary>
-![add remote]()
+Show me
 </summary>
+<p align="center" >
+  <img src="https://github.com/faradeen-ja/portfolio360/blob/be84bb564ad192a277c84135d2731752e6804dc8/add_remote_git.png" alt="ADD-REMOTE-DEMO" style="border-radius: 20px;" />
+</p>
 </details>
   
  🆑Using CLI
@@ -175,7 +182,12 @@ Show me
         
 8. ✅You can now make changes to your code and commit them to the new branch using standard Git commands such as `git add`, `git commit`, and `git push`. For example, use `git push yourBranchName main` to push new changes to your own forked repository.
 
-<p align="center">🎉Congratulations, you are close to your first PR!</p>
+<p align="center" >
+  <img src="https://cdn-icons-png.flaticon.com/512/5511/5511415.png" width="80" height="80" alt="congrats"/>
+  <p align="center">🎉Congratulations, you are close to your first PR!</p>
+</p>
+
+
 
 9. ▶️Next, go to the original repository and open a pull request PR. Choose your branch name against head/main to compare changes, double-check everything, and click "Create pull request".
     
@@ -188,9 +200,6 @@ Thank you!
 </details>
 
 
-   [![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
-   
-   [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360)
 
 
 ### Tutorials
