@@ -5,7 +5,7 @@
   <img src="https://cdn-icons-png.flaticon.com/512/1053/1053324.png" alt="Tailwind CSS" width="35" height="35" />
    
 
-[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://google.com) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
+[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://portfolio360.netlify.app/) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
 <a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
@@ -27,7 +27,7 @@
 
 ---
 
-Many thanks to Chetan Verma for his dedication building previous version, In my personal `portfolio360` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With `Portfolio360`, you can showcase your work in a more dynamic and visually appealing way
+Many thanks to Chetan Verma for his dedication building previous versions & letting me use it for my personal portfolio and here I am giving it back an immersive new look to all of you who are interested to use this repo and make desired changes to your needs, In my personal `portfolio360` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With `Portfolio360`, you can showcase your work in a more dynamic and visually appealing way
 
 <br>❒︎❒︎
 
@@ -45,13 +45,21 @@ Many thanks to Chetan Verma for his dedication building previous version, In my 
   <img src="https://github.com/faradeen-ja/portfolio360/blob/1be5d1ce2d3debf690cccfa1ff36f8c63eaf5f2f/v4-DEMO.gif" alt="DEMO" style="border-radius: 20px;" />
 </p>
 
-<p align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/1665/1665680.png" "alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
+<div align="center">
+  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
+  
+  <h3 align="center">Build settings</h3>
+  
+                                                                                                                                   
+| Runtime | Build Commands | Publish Dir |
+|------|-----|----------|
+| `Next.js` | `npm run build`  | `Next`  |
 
-</p>
 
 
 
+</div>
 
 
 
