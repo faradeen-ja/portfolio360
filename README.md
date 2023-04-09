@@ -84,8 +84,8 @@ Many thanks to Chetan Verma for his dedication building previous version, In my 
    1. Click the Deploy to Netlify button.
        
    <details>
-   <summary>Show me GUI</summary>
-   gif here
+   <summary>Show me</summary>
+   <img align="center" src= "https://github.com/faradeen-ja/portfolio360/blob/fd8980ca686276bf76d039cd362b6df4f03e64ad/DEPLOY_netlify.gif"/>
    </details>
    
 [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360)
