@@ -64,7 +64,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
 
    [![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
    
-   [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360-react-next-v4)
+   [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360)
 
 
 ### Tutorials
