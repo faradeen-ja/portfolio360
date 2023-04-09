@@ -46,90 +46,103 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
 </p>
 
 <p align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/1665/1665680.png"
-" alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
+<img src="https://cdn-icons-png.flaticon.com/512/1665/1665680.png" "alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
 
 </p>
 
+
+
+
+
+
+
 <details>
-  <summary>Using the Repository as a Portfolio Site?</summary>
-  If you would like to use this repository as your personal portfolio site, follow these steps to make changes and modifications that suit your needs:
-  ### Easy deploy
-   1. Click the "Deploy to Netlify" button.
-      <details>
-      <summary>
-      Show me GUI
-      </summary>
-      ▶️gif here
-      </details>
-      
-      This will create a repository copy NOT fork! for you under the copied repository on your GitHub and a subdomain site name on Netlify.
-      
-  ### Build + deploy advanced
+
+  <summary>  Using the Repository as a Portfolio Site?</summary>
+  If you would like to use this repository as your personal portfolio site, follow these steps to make changes and modifications that suit your needs.
+  
+ ###  <img src="https://cdn-icons-png.flaticon.com/512/4536/4536517.png" alt="Version 4" width="30" height="30" align="center"/> 1. Fork + Clone 
    1. Fork the repository 
    2. Clone or download the zip file and import your forked repository into your preferred integrated development environment (IDE), such as VS Code.
+   3. Run `yarn install` or `npm install` or `npm install --force` for dependencies.
+   4. Run `npm run dev` for development
    3. Start coding and modifying according to your needs.
-   4. Add your modifications using the "git add" command.
-   5. Commit your changes using "git commit -m 'message'".
-   6. Push your changes using "git push origin main".
+   4. Create a new branch `git branch <your branch name>`
+   4. Add your modifications using the `git add .` command.
+   5. Commit your changes using `git commit -m message`.
+   6. Push your changes using `git push your <branch name> main`.
    7. Use VS Code's source control GUI or command line interface (CLI) to perform all of the above.
    8. build Deploy your changes to Netlify.
+   
+   <p>Note: </p>
+   When using for personnal portfolio, there is no need to create new branches if committing/pushing in your copy of repository because netlify deploy will use your own URL to deploy your personnal site. 
 
-  ### Click deploy easy
-  deploy button 
+
+
+ ###  <img src="https://cdn-icons-png.flaticon.com/512/9374/9374979.png" alt="Version 4" width="30" height="30" align="center" /> 2. Deploy via Button 
+
+   1. Click the Deploy to Netlify button.
+       
+   <details>
+   <summary>Show me GUI</summary>
+   gif here
+   </details>
+    This will create a repository copy NOT fork! for you under the copied repositories on your GitHub and a subdomain site name on Netlify.
+    you can then import your own copy repo into VSCode to commit and push your changes for your personnal portfolio site, Not contributions!
+ ____
+ 
+ ###  <img src="https://cdn-icons-png.flaticon.com/512/8099/8099324.png" alt="Version 4" width="30" height="30" align="center" /> 3. Deploy via CLI   
+
+ #### 1. Install netlify CLI
+ 
+   In vscode `cloned repo` directory run
+   
+      npm install -g netlify-cli
+      
+ #### 2. Run the app in development mode
+ 
+   Install dependencies 
+   
+     npm install
+      
+   If faced peer deps and deps conflict during npm install run `npm install --force`
+   this will force the deps installation but with all conflicts, since we are using `yarn.lock` to fix this you may try running `yarn install` as well to update `yarn.lock` file or try installing any existing deps conflict indiviually. 
+
+#### 3. Start the App 
+    
+     npm run dev or netlify dev
   
-       <details>
-      <summary>
-      One click deploy
-      </summary>
-      ▶️show steps in GUI png
-      </details>
 
-  ### Code deploy advanced
-      <details>
-      <summary>
-      CLI build/deploy
-      </summary>
+#### 4. Connect to your netlify
+ 
+   Everything looks good? Shutdown dev mode with `Ctrl+C`
+      
+      netlify login
+   Logs in to your netlify account
 
-      ## Install netlify CLI
-      In vscode `cloned repo` directory run:
-      ```npm install -g netlify-cli```
-      ## Run the app in development mode
-      Install dependencies 
-      ```npm install```
-      If faced peer deps and deps conflict during npm install run `npm install --force`
-      this will force the deps installation but with all conflicts, since we are using `yarn.lock` to fix this you may try running `yarn install` as well to update `yarn.lock` file or try installing any existing deps conflict indiviually. 
+      netlify sites:create
+   It's important to create site name on netlify otherwise deployment wont proceed.
 
-      ## Start the App 
-      ```npm run dev or netlify dev```
-  
+      netlify init
+   Initializes your new Netlify site in the current directory.
 
-      ## Connect to your netlify
-      Everything looks good? Shutdown dev mode with `Ctrl+C`
-      ```1 netlify login```
-      Logs in to your netlify account
+#### 5. Build / Deploy
+ 
+     netlify build--prod
+   Builds your site for production
 
-      ```2 netlify sites:create```
-      It's important to create site name on netlify otherwise deployment wont proceed.
-
-      ```3 netlify init```
-      Initializes your new Netlify site in the current directory.
-
-      ## Build / Deploy
-      ```netlify build--prod``
-      Builds your site for production
-
-      ```netlify open:site```
-      Opens your site on the browser
-
-
-
-      </details>
-
+     netlify open:site
+   Opens your site on the browser
 
 
     You're done!
+    
+
+</detials>
 </details>
+
+  
+
 
 <details>
   <summary>Using the Repository for Contributions?</summary>
@@ -142,8 +155,8 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
     If it does not, connect the repository using the GUI or CLI (add remote, copy the forked repository link to the repo, and paste in the command palette).
     Connect the repository using the CLI with "git add remote origin <URL of repo>".
     Before committing and pushing, create a new branch using the GUI or CLI.
-    You can now make changes to your code and commit them to the new branch using standard Git commands such as "git add", "git commit", and "git push".
-    For example, use "git push yourBranchName main" to push new changes to your own forked repository.
+    You can now make changes to your code and commit them to the new branch using standard Git commands such as `git add`, `git commit`, and `git push`.
+    For example, use `git push yourBranchName main` to push new changes to your own forked repository.
     Congratulations, you are close to your first PR!
     Next, go to the original repository and open a PR. Choose your branch name against head/main to compare, double-check everything, and click "Create pull request".
   In summary, you should open a pull request on the original repository when you want to contribute changes made in your forked repository back to the original repository.
@@ -152,6 +165,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
 
 </details>
 
+</details>
 
 
    [![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
