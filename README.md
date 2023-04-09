@@ -135,7 +135,7 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
    Opens your site on the browser
 
 
-    You're done!
+  Great job, you developed, built & deployed your personal portfolio site!
     
 
 </detials>
@@ -147,21 +147,41 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
 <details>
   <summary>Using the Repository for Contributions?</summary>
 
-  If you have any good pull requests (PRs) to enhance this repository further or have found any issues, please follow these steps:
-  Fork this repository.
-    Clone the repository or download the zip file and import it into your preferred IDE.
-    Start coding, debugging, and enhancing.
-    Your IDE should automatically find the remote GitHub repository in source control. Check the top left corner on your VS Code panel.
-    If it does not, connect the repository using the GUI or CLI (add remote, copy the forked repository link to the repo, and paste in the command palette).
-    Connect the repository using the CLI with "git add remote origin <URL of repo>".
-    Before committing and pushing, create a new branch using the GUI or CLI.
-    You can now make changes to your code and commit them to the new branch using standard Git commands such as `git add`, `git commit`, and `git push`.
-    For example, use `git push yourBranchName main` to push new changes to your own forked repository.
-    Congratulations, you are close to your first PR!
-    Next, go to the original repository and open a PR. Choose your branch name against head/main to compare, double-check everything, and click "Create pull request".
-  In summary, you should open a pull request on the original repository when you want to contribute changes made in your forked repository back to the original repository.
-  If you are using the repository as your own portfolio site, a PR is not necessary.
-  Thank you!
+If you have any good pull requests (PRs) to enhance this repository further or have found any issues, please follow these steps:
+1. Fork this repository.
+2. Clone the repository or download the zip file and import it into your preferred IDE.
+3. Run `yarn install` or `npm install` or `npm install --force` for dependencies.
+4. Run `npm run dev` for development
+5. Start coding, debugging, and enhancing.
+
+<p>Note:</p>
+  ▶️Your IDE should automatically find the remote GitHub repository in source control. If it does not, check the top left corner on your VS Code explorer panel, open git repository clicking the button. 
+  
+6. ✅If not already, connect the remote repository using the explorer panel or CLI add remote, copy the forked repository link and paste it into the command palette. 
+<details>
+Show me
+<summary>
+![add remote]()
+</summary>
+</details>
+  
+ 🆑Using CLI
+ 
+     git add remote origin <URL of repo>.
+
+7. ⚠️Before committing and pushing, create a new branch using the GUI or CLI.
+
+       git branch <my new branch name>
+        
+8. ✅You can now make changes to your code and commit them to the new branch using standard Git commands such as `git add`, `git commit`, and `git push`. For example, use `git push yourBranchName main` to push new changes to your own forked repository.
+
+<p align="center">🎉Congratulations, you are close to your first PR!</p>
+
+9. ▶️Next, go to the original repository and open a pull request PR. Choose your branch name against head/main to compare changes, double-check everything, and click "Create pull request".
+    
+In summary, you should open a pull request on the original repository when you want to contribute changes made in your forked repository back to the original repository.
+If you are using the repository as your own portfolio site, a PR is not necessary.
+Thank you!
 
 </details>
 
