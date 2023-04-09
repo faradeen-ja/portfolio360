@@ -1,11 +1,13 @@
 <div align="center" style="pointer-events: none;">
 
-  <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
   <img src="https://cdn-icons-png.flaticon.com/512/556/556668.png" alt="Next js" width="40" height="40"/>
-   <img src="https://cdn-icons-png.flaticon.com/512/1053/1053324.png" alt="Tailwind CSS" width="35" height="35" />
+  <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/1053/1053324.png" alt="Tailwind CSS" width="35" height="35" />
+   
 
 
-[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://main--portfolio360.netlify.app) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
+[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://main--portfolio360.netlify.app) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" />
+<br>
 <a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
@@ -60,6 +62,9 @@ Many thanks to Chetan Verma for his dedication building previous version, In `V4
   
 </details>
 
+   [![Netlify Status](https://api.netlify.com/api/v1/badges/2063c402-0ee8-40ad-82fb-0e1e488d6f2c/deploy-status)](https://app.netlify.com/sites/portfolio360/deploys)
+   
+   [![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/faradeen-ja/portfolio360-react-next-v4)
 
 
 ### Tutorials
