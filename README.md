@@ -5,7 +5,7 @@
   <img src="https://cdn-icons-png.flaticon.com/512/1053/1053324.png" alt="Tailwind CSS" width="35" height="35" />
    
 
-[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://portfolio360.netlify.app/) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/9080/9080211.png" alt="Version 4" width="20" height="15" align="center" /><br>
+[ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://portfolio360.netlify.app/) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/5974/5974405.png" alt="Version 4" width="20" height="15" align="center" /><br>
 <a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
@@ -27,13 +27,13 @@
 
 ---
 
-Many thanks to Chetan Verma for his dedication building previous versions & letting me use it for my personal portfolio and here I am giving it back an immersive new look to all of you who are interested to use this repo and make desired changes to your needs, In my personal `portfolio360` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With `Portfolio360`, you can showcase your work in a more dynamic and visually appealing way
+Many thanks to Chetan Verma for his dedication building previous versions & letting me use it for my personal portfolio and here I am giving it back an immersive new look to all of you who are interested to use this repo and make desired changes to your needs, In my personal `portfolio360` I developed & modernized not just a template but a 360 visual, functionality & accessibility, some immersive improvements such as `internal search` indexing keywords used to quickly and efficiently retrieve portfolio data on a search query basis. add to `calendar`, `skills360`, `collabs360`, dynamic `select work` and few more designs & developments.<br> In the context of a portfolio, a 360-degree visual allows potential clients or employers to view your work in a more interactive and engaging way. This multi feature design provides a more comprehensive view of your work and can help you make a lasting impression. With `Portfolio360`, you can showcase your work and identity in a more dynamic and visually appealing way
 
 <br>❒︎❒︎
 
   <div  align="center">
-  🔧 Built with React, Next.js, and Tailwind CSS. <br> ⇄ Version 4.0. <a href="https://mysite.com">Live</a> <strong >FJ</strong> <br>
-  Previouse Versions<a href="https://github.com/chetanverma16/react-portfolio-template"> V1-3</a> <strong> Chetan Verma</strong> 
+  🔧 Built with React, Next.js, and Tailwind CSS. <br> ⇄ This Version: Portfolio360. <a href="https://portfolio360.netlify.app/">Live</a> <strong >FJ</strong> <br>
+  Previouse Versions:<a href="https://github.com/chetanverma16/react-portfolio-template"> V1-3</a> <strong> Chetan Verma</strong> 
   <br>❒︎❒︎
     
    </div>
