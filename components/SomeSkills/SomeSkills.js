@@ -10,7 +10,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
     const handleScroll = () => {
       const top = cardRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-      if (top < windowHeight * 0.4) {
+      if (top < windowHeight * 0.6) {
         setIsVisible(true);
       }
     };
