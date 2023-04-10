@@ -1,41 +1,38 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
-/* this component is imported in index.js/footer page to display the forks_counts: UI on footer section  */
-/* your github token here accessToken = process.env.GIT_API_TOKEN */
-
-/* or you can completly ignore and delete this component */
-const accessToken = process.env.GIT_ACCESS_TOKEN;
-
-const api = axios.create({
-  baseURL: "https://api.github.com",
-  headers: {
-    Authorization: `Token ${accessToken}`,
-  },
-});
-
-const RepoForks = ({ repository }) => {
-  const [forks, setForks] = useState(0);
+const RepoForks = ({ repoName }) => {
+  const [forks, setForks] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    async function fetchForks() {
+    const fetchForks = async () => {
+      setIsLoading(true);
       try {
-        const response = await api.get(`/repos/${repository}`);
+        const response = await axios.get(`https://api.github.com/repos/${repoName}`);
         setForks(response.data.forks_count);
-      } catch (error) {
-        console.error(error);
+      } catch (err) {
+        setError(err);
       }
-    }
+      setIsLoading(false);
+    };
     fetchForks();
-  }, [repository]);
+  }, [repoName]);
 
   return (
-    <div>
-      <a href="http://github.com/faradeen-ja/portfolio360" target="_blank" rel="noreferrer">
-        <p>⊶⊸ Forks: {forks}</p>
-      </a>
+    <a href="http://github.com/faradeen-ja/portfolio360" target="_blank" rel="noreferrer">
+    <div className="gap-1 flex justify-center items-center">
+    
+      <h2 className="text-sm font-bold">Forks</h2>
+      {isLoading && <p>Loading</p>}
+      {error && <p>Error: {error.message}</p>}
+      {forks !== null && <p className="text-sm">{forks}</p>}
+      
     </div>
+    </a>
   );
 };
 
 export default RepoForks;
+

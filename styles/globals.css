@@ -278,11 +278,41 @@
 .some-skills-project-cards {
   width: 280px;
   height: 220px;
-  background-color: rgba(68, 67, 67, 0.114);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.136);
+  background-color: #7e7a7a2c;
+  box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.266);
   border-radius: 20px;
+}
+.some-skills-project-cards:hover {
+  width: 280px;
+  height: 220px;
+  background: linear-gradient(45deg, rgb(44, 148, 246), #f993eae7, #50fac1);
+  border-radius: 20px;
+  color: white;
 
 }
+
+ .some-skills-project-cards:hover:after{
+  position: absolute;
+  width:284px !important;
+  height: 224px !important;
+  right: 0 !important;
+  left: 1px !important;
+  top: 1px !important;
+  content: "";
+  border-radius:20px;
+  margin: auto;
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background-color: rgba(16, 16, 16, 0.963);
+  filter: blur(0px);
+  z-index: -1;
+
+
+}
+
+
+
+
 
 
 
@@ -1148,8 +1178,8 @@ body {
 /* START */
 /* REPOFORK COMPONENT */ /* IF YOU WISH YOU CAN REMOVE THIS COMPONENT FROM ENTIRE CODE BASE BUT PLEASE CREDIT THE DEVELOPERS IN THE FOOTER AREA TO THEIR GITHUB PROFILE */
 
-
 .repo-fork{
+  width: 80px;
   height: 25px;
   padding: 5px;
   background-color: rgba(26, 226, 26, 0.342);
@@ -1334,9 +1364,6 @@ body {
 
 
 
-  
-
-
   .feedback-box{
     width: 95%;
 
@@ -1356,6 +1383,14 @@ body {
     position: relative;
    
   }
+
+  .some-skills-project-cards:hover{
+    width: 100%;
+  }
+  .some-skills-project-cards:hover::after{
+    width: 100% !important;
+  }
+
 
   .collab-paragraph{
     width: 95%;
