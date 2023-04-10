@@ -283,8 +283,8 @@
   border-radius: 20px;
 }
 .some-skills-project-cards:hover {
-  width: 280px;
-  height: 226px;
+  width: 283.05px;
+  height: 228px;
   background: linear-gradient(45deg, rgb(44, 148, 246), #f993eae7, #50fac1);
   border-radius: 20px;
   color: white;
@@ -293,11 +293,11 @@
 
  .some-skills-project-cards:hover:after{
   position: absolute;
-  width:284px !important;
+  width:280px !important;
   height: 224px !important;
   right: 0 !important;
   left: 1px !important;
-  top: 1px !important;
+  top: 2px !important;
   content: "";
   border-radius:20px;
   margin: auto;
@@ -1388,7 +1388,7 @@ body {
     width: 100%;
   }
   .some-skills-project-cards:hover::after{
-    width: 100% !important;
+    width: 99% !important;
   }
 
 
