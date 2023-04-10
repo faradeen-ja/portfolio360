@@ -108,7 +108,6 @@ const SearchMe = () => {
           {searchResults.map((result) => (
             <div key={result.item.id}>
               <h2 className={styles.skillName}>
-                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   className={styles.skillIcon}
                   src={result.item.icon}

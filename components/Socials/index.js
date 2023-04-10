@@ -15,7 +15,7 @@ const Socials = ({ className }) => {
       ))}
 
       <div className="repo-fork">
-        <RepoForks repository="faradeen-ja/v4-0223" />
+        <RepoForks repository="github.com/faradeen-ja/portfolio360" />
       </div>
     </div>
   );

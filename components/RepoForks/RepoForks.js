@@ -5,7 +5,7 @@ import axios from "axios";
 /* your github token here accessToken = process.env.GIT_API_TOKEN */
 
 /* or you can completly ignore and delete this component */
-const accessToken = ".env token";
+const accessToken = process.env.GIT_ACCESS_TOKEN;
 
 const api = axios.create({
   baseURL: "https://api.github.com",
@@ -31,7 +31,7 @@ const RepoForks = ({ repository }) => {
 
   return (
     <div>
-      <a href="https" target="_blank" rel="noreferrer">
+      <a href="http://github.com/faradeen-ja/portfolio360" target="_blank" rel="noreferrer">
         <p>⊶⊸ Forks: {forks}</p>
       </a>
     </div>
