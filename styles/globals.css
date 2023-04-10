@@ -648,6 +648,7 @@
   display: flex;
   justify-content: space-around;
   align-items:center;
+
   width: 95%;
 
 
@@ -661,6 +662,7 @@
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
  position: relative;
  background-color: rgba(13, 13, 13, 0.91);
  border-radius: 12px;
@@ -762,37 +764,38 @@
 
 
 
-.apple-btn:focus, .outlook-btn:focus {
+.calendar-btns:focus{
   outline: none;
   box-shadow: 0 0 0 2px white;
 }
 
 
+.calendar-bts-box{
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.outlook-btn, .apple-btn{
-  font-size: 1rem;
-  font-weight: bold;
+.calendar-btns{
+  font-size: 0.85rem;
   text-transform: uppercase;
   position: relative;
   padding:0.8rem ;
-  width: 204px;
+  width: 122px;
   height: 52px;
   cursor: pointer;
   border-radius: 12px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(45deg, rgb(44, 148, 246), #5e63f2e7, #50fac1);
-
-
+  background: linear-gradient(45deg, rgb(31, 143, 248), #5e63f2e7, #50fac1);
 }
 
 
 
-.outlook-btn::before, .apple-btn::before{
+.calendar-btns::before{
   position: absolute;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(30, 28, 28, 0.953);
   filter: blur(px);
   z-index: -1;
-  width: 202px;
+  width: 120px;
   height: 50px;
   top: 1px;
   left: 1px;
@@ -1325,14 +1328,14 @@ body {
 
 .add-to-calendar-box{
   width: 100%;
-  margin-top: 200px;
+  margin-top: 280px;
       
 
   }
 
  .calendar-box{
-  width: 366px;
-  height: 270px;
+  width: 356px;
+  height: 320px;
  }
   
   
@@ -1341,8 +1344,8 @@ body {
     position: absolute;
     top: 0px;
     bottom: 0;
-    width: 368px;
-    height: 272px;
+    width: 358px;
+    height: 322px;
     content: "";
     border-radius: 20px;
     margin: auto;
