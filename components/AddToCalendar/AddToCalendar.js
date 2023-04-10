@@ -3,12 +3,11 @@ import { useState } from "react";
 /* update calnedar details with your personal information */
 const AddToCalendar = () => {
   const [event, setEvent] = useState({
-    title: "Chat with (candidate name here) hiring meeting",
+    title: "Chat with FJ hiring meeting",
     description:
-      'Discuss background and upcoming hiring tasks.  email ▶️"yourEmail@live.com" ',
+      'Discuss background and upcoming hiring tasks.  email ▶️"faradeen@outlook.com" ',
     /* you can import you image from a cdn like Linkedin or Github,  copy paste image url/link */
-    image:
-      '<img src="https://media.licdn.com/dms/image/D4D03AQEbs4OYFfJNIw/profile-displayphoto-shrink_400_400/0/1677634568239?e=1683763200&v=beta&t=udBxCDJKS54-tRjhmj3RmfMc0h4OZlnqO7iFW53JiPM" width="30" height="30">',
+    website:"https://fj360.dev",
     location: "Online",
     startTime: "2023-03-15T10:00:00-04:00",
     endTime: "2023-03-15T11:00:00-04:00",
@@ -21,7 +20,7 @@ const AddToCalendar = () => {
     const outlookCalendarParams = new URLSearchParams({
       subject: event.title,
       location: event.location,
-      body: event.description + event.image,
+      body: event.description + event.website,
       startdt: new Date(event.startTime).toISOString(),
       enddt: new Date(event.endTime).toISOString(),
       allday: false,
@@ -29,21 +28,24 @@ const AddToCalendar = () => {
     return `${outlookCalendarBaseUrl}?${outlookCalendarParams.toString()}`;
   };
 
-  /* apple */
   const constructAppleUrl = () => {
-    const appleCalendarBaseUrl =
-      "webcal://p25-calendars.icloud.com/published/2/abcdefghijklmno";
-    const appleCalendarParams = new URLSearchParams({
-      title: event.title,
-      location: event.location,
-      notes: event.description,
-      start: new Date(event.startTime).toISOString().replace(/[:-]/g, ""),
-      end: new Date(event.endTime).toISOString().replace(/[:-]/g, ""),
-      isAllDay: false,
-      url: "",
-    });
-    return `${appleCalendarBaseUrl}?${appleCalendarParams.toString()}`;
+    const calendarData = `BEGIN:VCALENDAR
+  PRODID:-//My Company//EN
+  VERSION:2.0
+  CALSCALE:GREGORIAN
+  BEGIN:VEVENT
+  UID:${event.id}
+  DTSTART:${new Date(event.startTime).toISOString().replace(/[:-]/g, "")}
+  DTEND:${new Date(event.endTime).toISOString().replace(/[:-]/g, "")}
+  SUMMARY:${event.title}
+  LOCATION:${event.location}
+  DESCRIPTION:${event.description}
+  END:VEVENT
+  END:VCALENDAR`;
+  
+    return URL.createObjectURL(new Blob([calendarData], { type: 'text/calendar' }));
   };
+  
 
   const openCalendar = (url) => {
     window.open(url, "_blank");
