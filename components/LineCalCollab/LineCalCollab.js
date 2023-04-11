@@ -121,7 +121,7 @@ const SquareCards = () => {
           <h1 className="areas-of-collab-title   text-5xl font-bold text-gray-800 mb-11 md:mb-0 md:mr-4">
             Some Areas I Collab
           </h1>
-          <p className="areas-of-work-paragraph text-base text-gray-600  mb-11">
+          <p className="areas-of-work-paragraph text-base text-gray-500  mb-11">
             To excel in my specialties, efficient work-flows, strong
             communication, and self-discipline are crucial. My unwavering work
             ethic drives me to deliver outstanding results in web development,

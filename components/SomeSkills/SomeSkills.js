@@ -56,7 +56,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                   href={project.url}
                   target={"blank"}
                   rel={"norefferrer"}
-                  className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow-xl"
+                  className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl"
                 >
                   {/*  // eslint-disable-next-line @next/next/no-img-element 
                  <svg className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
