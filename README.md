@@ -1,4 +1,5 @@
 <div align="center" style="pointer-events: none;">
+  
 
   <img src="https://cdn-icons-png.flaticon.com/512/556/556668.png" alt="Next js" width="40" height="40"/>
   <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="Reack js" width="35" height="35" style="pointer-events: none;"/>
@@ -6,8 +7,8 @@
    
 
 [ ᑭ𝗢ᖇ𝗧ᖴ𝗢ᒪ𝗜𝗢360 ](https://portfolio360.netlify.app/) <img src="https://cdn-icons-png.flaticon.com/512/7205/7205679.png" alt="Version 4" width="25" height="25" align="center" /><img src="https://cdn-icons-png.flaticon.com/512/5974/5974405.png" alt="Version 4" width="20" height="15" align="center" /><br>
-<a href="https://github.com/faradeen-ja/portfolio360-react-next-v4/blob/main/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/faradeen-ja/portfolio360-react-next-v4?style=round" alt="portfolio360-react-next-v4 license"/>
+<a href="https://github.com/faradeen-ja/portfolio360/blob/main/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/faradeen-ja/portfolio360?style=round" alt="portfolio360-react-next-v4 license"/>
 </a>
 <a href="https://github.com/faradeen-ja/portfolio360/graphs/contributors">
 <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/faradeen-ja/portfolio360" />
