@@ -62,11 +62,7 @@ const HangingBox = ({ children }) => {
 /* for collab cards */
 const SquareCards = () => {
   const [ref, inView] = useInView({ threshold: 0.3 });
-  const cards = [
-    { color: "red", title: "Card 1" },
-    { color: "blue", title: "Card 2" },
-    { color: "green", title: "Card 3" },
-  ];
+
   const cardVariants = {
     hidden: { opacity: 0, y: "-20%" },
     visible: {
@@ -83,7 +79,7 @@ const SquareCards = () => {
     }
   }, [controls, inView]);
 
-  const cardDelay = 0.3;
+  const cardDelay = 0.4;
 
   /* collab cards data, we could also separate this into another file */
   const SquareCardsData = [
@@ -96,17 +92,17 @@ const SquareCards = () => {
     {
       title: "FRONTEND",
       description: "DESIGN & DEVELOPMENT",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/9163/9163452.png",
+      imgUrl: "https://cdn-icons-png.flaticon.com/512/1157/1157109.png",
     },
     {
       title: "IT",
       description: "GENERAL FOUNDATIONS",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/9573/9573990.png",
+      imgUrl: "https://cdn-icons-png.flaticon.com/512/10013/10013352.png",
     },
     {
       title: "LEADERSHIP",
       description: "PROJECT MANAGEMENT & TEAM-WORK",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/8187/8187421.png",
+      imgUrl: " https://cdn-icons-png.flaticon.com/512/9483/9483043.png ",
     },
   ];
 

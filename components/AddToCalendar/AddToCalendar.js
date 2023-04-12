@@ -1,13 +1,20 @@
 import { useState } from "react";
-
+import Image from "next/image";
+/* Replace text/code to your own needs, Edit this part to display your personal information on calendar */
 const AddToCalendar = () => {
   const [event, setEvent] = useState({
-    title: "Schedule a hiring meeting",
-    description:
-      "Discuss job details with candidate. Discuss background and qualifications. Applicant website: https://fj360.dev Applicant social: https://linkedin.com/in/faradeen",
-    location: "Online",
+    title: "Chat meeting with candidate for tech position",
+    description: `<p>😊Thanks for adding me (FJ) to your busy calendar, I know it can be tough finding an ideal candidate.<br>✅I am available for a 15-minute opportunity to present you my solutions demo, background and qualifications.</p>
+    <h5>Applicant website:</h5> <a align="center" href="https://fj360.dev"><img src="   https://cdn-icons-png.flaticon.com/512/3059/3059997.png " width="25" height="25" alt="">fj360.dev</a>
+    <h5>Applicant social:</h5>  <a align="center" href="https://www.linkedin.com/in/faradeen/"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png " width="25" height="25" alt="">LinkedIn</a>
+    <h4>Simply connect with me on LinkedIn > Chat or Call</h4>
+   
+    <img src='https://media.licdn.com/dms/image/D5603AQGRTHIbNliotw/profile-displayphoto-shrink_400_400/0/1679771124043?e=1686787200&v=beta&t=7fe0JWmGApmxUF6JLwU1MhyTLkzRTlD42-0K5_FHmRg' width='100px' height='100px'/><h5>FJ /Salesforce Admin/Dev</h5>
+    <h5>See you in the Cloud!</h5> `,
+
+    location: "https://www.linkedin.com/in/faradeen/",
     startTime: "2023-04-10T04:15:00+00:00",
-    endTime: "2023-04-10T04:15:00+00:00",
+    endTime: "2023-04-10T04:30:00+00:00",
   });
 
   const constructGoogleUrl = () => {
@@ -59,28 +66,33 @@ const AddToCalendar = () => {
   };
 
   return (
-    <><div className="calendar-bts-box calendar-footer flex justify-center   mt-0">
-      <button className="calendar-btns  hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-       onClick={() => openCalendar(constructGoogleUrl())}>
-        Google Calendar
-      </button>
-      <button className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-       onClick={() => openCalendar(constructOutlookLiveUrl())}>
-        365 Live Calendar
-      </button>
-      <button className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-       onClick={() => openCalendar(constructOutlookUrl())}>
-        Outlook Calendar
-      </button>
-    </div></>
-   
-  
+    <>
+      <div className="calendar-bts-box calendar-footer flex justify-center   mt-0">
+        <button
+          className="calendar-btns  hover:bg-white hover:text-black font- opacity-95  hover:opacity-100  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          onClick={() => openCalendar(constructGoogleUrl())}
+        >      
+          Google Calendar
+        <Image src="   https://cdn-icons-png.flaticon.com/512/5968/5968499.png " width="50" height="50" alt="Google Calendar" />
+
+        </button>
+        <button
+          className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          onClick={() => openCalendar(constructOutlookLiveUrl())}
+        >
+          365 Live Calendar
+          <Image src="https://cdn-icons-png.flaticon.com/512/888/888867.png " width="50" height="50" alt="365 Calendar" />
+        </button>
+        <button
+          className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          onClick={() => openCalendar(constructOutlookUrl())}
+        >
+          Outlook Calendar
+          <Image src="   https://cdn-icons-png.flaticon.com/512/732/732223.png " width="50" height="50" alt="Outlook Calendar"  />
+        </button>
+      </div>
+    </>
   );
 };
 
-
 export default AddToCalendar;
-
-
-
-

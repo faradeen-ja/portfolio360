@@ -471,7 +471,7 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
 
 
 .areas-of-work-cards{
-  background: linear-gradient(45deg, rgb(44, 148, 246), #f993eae7, #50fac1);
+  background: linear-gradient(-45deg, rgb(168, 92, 239), #669deee7, #8fefcf, rgba(236, 139, 181, 0.919));
   width: 226px;
   height: 204px;
   border-radius: 10px;
@@ -493,8 +493,7 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
   backdrop-filter: blur(20px) saturate(200%);
   -webkit-backdrop-filter: blur(20px) saturate(200%);
   background-color: rgba(13, 13, 13, 0.947);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  filter: blur(1px);
+/*   filter: blur(px); */
 
   z-index: -1;
 
@@ -668,7 +667,6 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
  flex-direction: column;
  justify-content: center;
  align-items: center;
-
  position: relative;
  background-color: rgba(13, 13, 13, 0.91);
  border-radius: 12px;
@@ -678,7 +676,7 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.195);
  padding: 11px;
  width: 450px;
- height: 200px;
+ height: 300px;
   
 }
 .cal-video{
@@ -695,7 +693,7 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
   top: 0;
   bottom: 0;
   width: 452px;
-  height: 204px;
+  height: 304px;
   background: linear-gradient(45deg, rgb(24, 134, 238), #f786e6e7, rgb(235, 177, 187), #fade50);
   filter: blur(px);
   z-index: -1;
@@ -787,11 +785,11 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
   position: relative;
   padding:0.8rem ;
   width: 122px;
-  height: 52px;
+  height: 120px;
   cursor: pointer;
   border-radius: 12px;
   color: rgb(255, 255, 255);
-  background: linear-gradient(45deg, rgb(31, 143, 248), #5e63f2e7, #50fac1);
+  background: linear-gradient(45deg, rgba(149, 147, 147, 0.545), hsla(190, 50%, 98%, 0.725), #fb9f49);
 }
 
 
@@ -802,7 +800,7 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
   filter: blur(px);
   z-index: -1;
   width: 120px;
-  height: 50px;
+  height: 70px;
   top: 1px;
   left: 1px;
   content: "";
