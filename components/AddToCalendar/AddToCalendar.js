@@ -67,7 +67,7 @@ const AddToCalendar = () => {
 
   return (
     <>
-      <div className="calendar-bts-box calendar-footer flex justify-center   mt-0">
+      <div className="calendar-btns-box calendar-footer flex justify-center   mt-0">
         <button
           className="calendar-btns  hover:bg-white hover:text-black font- opacity-95  hover:opacity-100  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => openCalendar(constructGoogleUrl())}

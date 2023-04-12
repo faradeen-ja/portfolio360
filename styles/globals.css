@@ -747,6 +747,10 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
   padding: 11px;
   gap: 10px;
   display: flex;
+
+
+
+  
 }
 
 
@@ -774,9 +778,10 @@ transition-all duration-500 ease-out transform hover:-translate-y-1 hover:shadow
 }
 
 
-.calendar-bts-box{
+.calendar-btns-box{
   display: flex;
-  flex-wrap: wrap;
+
+
 }
 
 .calendar-btns{
@@ -1333,6 +1338,7 @@ body {
 .add-to-calendar-box{
   width: 100%;
   margin-top: 280px;
+ 
       
 
   }
@@ -1340,8 +1346,16 @@ body {
  .calendar-box{
   width: 356px;
   height: 320px;
+
+
  }
-  
+  .calendar-btns-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+
+  }
   
   
   .calendar-box::before{
@@ -1368,6 +1382,37 @@ body {
     width: 100%;
   }
   
+
+  .calendar-btns{
+
+    position: relative;
+    padding:0.8rem ;
+    width: 95px;
+    height: 108px;
+ 
+  }
+  
+  
+  
+  .calendar-btns::before{
+ 
+    width: 91px;
+    height: 66px;
+    top: 1px;
+    left: 1px;
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
