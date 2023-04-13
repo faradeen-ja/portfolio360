@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Image from "next/image";
+import google from "/public/images/google-calendar.png"
+import live365 from "/public/images/office.png"
+import outlook from '/public/images/outlook.png'
 /* Replace text/code to your own needs, Edit this part to display your personal information on calendar */
 const AddToCalendar = () => {
   const [event, setEvent] = useState({
@@ -71,24 +74,38 @@ const AddToCalendar = () => {
         <button
           className="calendar-btns  hover:bg-white hover:text-black font- opacity-95  hover:opacity-100  py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => openCalendar(constructGoogleUrl())}
-        >      
+        >
           Google Calendar
-        <Image src="   https://cdn-icons-png.flaticon.com/512/5968/5968499.png " width="50" height="50" alt="Google Calendar" />
-
+          <Image
+            src={google}
+            width="50"
+            height="50"
+            alt="Google Calendar"
+          />
         </button>
         <button
           className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => openCalendar(constructOutlookLiveUrl())}
         >
           365 Live Calendar
-          <Image src="https://cdn-icons-png.flaticon.com/512/888/888867.png " width="50" height="50" alt="365 Calendar" />
+          <Image
+            src={live365}
+            width="50"
+            height="50"
+            alt="365 Calendar"
+          />
         </button>
         <button
           className="calendar-btns hover:bg-white hover:text-black font- opacity-95 hover:opacity-100 py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           onClick={() => openCalendar(constructOutlookUrl())}
         >
           Outlook Calendar
-          <Image src="   https://cdn-icons-png.flaticon.com/512/732/732223.png " width="50" height="50" alt="Outlook Calendar"  />
+          <Image
+            src={outlook}
+            width="50"
+            height="50"
+            alt="Outlook Calendar"
+          />
         </button>
       </div>
     </>
