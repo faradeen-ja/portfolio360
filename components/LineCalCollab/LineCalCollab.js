@@ -102,7 +102,7 @@ const SquareCards = () => {
     {
       title: "LEADERSHIP",
       description: "PROJECT MANAGEMENT & TEAM-WORK",
-      imgUrl: " https://cdn-icons-png.flaticon.com/512/9483/9483043.png ",
+      imgUrl: " https://cdn-icons-png.flaticon.com/512/7080/7080890.png",
     },
   ];
 
