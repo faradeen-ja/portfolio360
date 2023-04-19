@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React, { useEffect, useRef, useState } from "react";
-
+import Image from "next/image";
 const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
   const [isVisible, setIsVisible] = useState(false);
   const cardRef = useRef(null);
@@ -43,6 +43,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
               className="skills-li-items mr-2 mb-2 px- py-   text-md"
             >
               {tag}
+              
             </li>
           ))}
         </ul>
@@ -63,18 +64,20 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                  <path d="M50 5 l40 23 v44 l-40 23 l-40 -23 v-44 z" stroke="currentColor" fill="none" stroke-width="2" />
                  </svg>
              
-             */}
-                  {/*  <img
-                src={project.iconUrl}
-                alt="related project icon"
-                className="absolute top-0 left-0 w-full h-full object-cover"
-              
-            
-                
-              /> */}
-                  <svg className="svg-size absolute top-2 left-4 md:w-24 md:h-24 mr-6 md:mr-8">
+                */}
+            {/*     <div className="svg-tab-icons">
+                <Image
+                    src={project.iconTab}
+                    width={50}
+                    height={50}
+                    alt="related project icon"
+                    className="top-0 right-24 w-full h-full object-cover"
+                  /> 
+                </div> */}
+                <svg className="svg-size absolute top-2 left-4 md:w-24 md:h-24 mr-6 md:mr-8">
                     {project.iconSVG}
                   </svg>
+             
                   <div className="absolute bottom-20 left-0 w-full h-24  px-4 py-2">
                     {/* bg-gradient-to-t from-red-700 via-gray-800 to-gray-900 opacity-90 */}
                     <h3 className="some-skills-project-cards-title text-lg font-medium mb-1">

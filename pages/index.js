@@ -318,6 +318,7 @@ export default function Home() {
       "Version control",
     ],
 
+
     relatedProjects: [
       {
         title: "Netflix Clone using react",

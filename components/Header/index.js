@@ -113,8 +113,9 @@ const Header = ({
               {!isBlog ? (
                 <div className="grid grid-cols-1  ">
                   <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
-                  {/* optimized contents UI */}
+{/*                   <Button onClick={handleAboutScroll}>About</Button>
+ */}                  {/* optimized contents UI */}
+                  
                   <Button onClick={handleSkillsScroll}>Skills360°</Button>
                   <Button onClick={handleCollabScroll}>Collabs360°</Button>
                   {showBlog && (

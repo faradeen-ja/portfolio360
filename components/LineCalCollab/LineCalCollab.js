@@ -85,24 +85,31 @@ const SquareCards = () => {
   const SquareCardsData = [
     {
       title: "SALESFORCE",
-      description: "ADMINISTRATION & DEVELOPMENT",
+      description: "Admin & Development",
+      imgUrl: "/images/salesforce.png",
+      subIcon: "/images/check-box.png"
 
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/873/873143.png",
     },
     {
       title: "FRONTEND",
-      description: "DESIGN & DEVELOPMENT",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/1157/1157109.png",
+      description: "Design & Development",
+      imgUrl: "/images/code.png",
+      subIcon: "/images/check-box.png",
+
     },
     {
       title: "IT",
-      description: "GENERAL FOUNDATIONS",
-      imgUrl: "https://cdn-icons-png.flaticon.com/512/10013/10013352.png",
+      description: "Support & Security",
+      imgUrl: "/images/technical-pc.png",
+      subIcon: "/images/check-box.png"
+
     },
     {
       title: "LEADERSHIP",
-      description: "PROJECT MANAGEMENT & TEAM-WORK",
-      imgUrl: " https://cdn-icons-png.flaticon.com/512/7080/7080890.png",
+      description: "Collaboration & PM",
+      imgUrl: "/images/leadership.png",
+      subIcon: "/images/check-box.png"
+
     },
   ];
 
@@ -141,8 +148,8 @@ const SquareCards = () => {
               animate={controls}
               transition={{ duration: 1, delay: i * 0.1 }}
             >
-              <div className="flex items-center justify-center mb-4">
-                <Image src={card.imgUrl} width={50} height={50} alt="Icon" />
+              <div className="flex items-center  justify-center mb-4">
+                <Image src={card.imgUrl} width={50} height={50} alt="Collaboration Areas" />
               </div>
               <h2 className="collab-card-title text-lg font-bold text-black mb-2 text-5xl">
                 {card.title}
@@ -150,6 +157,8 @@ const SquareCards = () => {
               <p className="collab-card-p text-base text-dark-500 text-black">
                 {card.description}
               </p>
+              <Image src={card.subIcon} width={28} height={28} alt="Getting the job done!" />
+
             </motion.div>
           ))}
         </div>
@@ -159,13 +168,14 @@ const SquareCards = () => {
       <div className="add-to-calendar-primary-container">
         <div className="add-to-cal-parent-items-center">
           {/* time is gold box */}
-          <div className=" add-to-cal-time-is-gold-box">
+          <div className="text-center add-to-cal-time-is-gold-box">
             <HangingBox>
               <AnimatedH1>
+
                 <span className="time-white">Time is</span>{" "}
                 <span className="gold-span">G🕤LD</span>
                 <br></br> <span className="time-white">its gold to meet </span>
-                <br></br>
+        
                 <span className="you-span text-5xl font-bold gold-span">
                   {" "}
                   Y🕤U!{" "}
