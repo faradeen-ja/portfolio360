@@ -59,6 +59,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                   rel={"norefferrer"}
                   className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl"
                 >
+                  
                   {/*  // eslint-disable-next-line @next/next/no-img-element 
                  <svg className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                  <path d="M50 5 l40 23 v44 l-40 23 l-40 -23 v-44 z" stroke="currentColor" fill="none" stroke-width="2" />

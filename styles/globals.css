@@ -278,17 +278,22 @@
 .some-skills-project-cards {
   width: 284px;
   height: 240px;
-  background: linear-gradient(45deg, rgb(44, 148, 246), #a96aede7, #50fac1);
-  border-radius: 20px;
-  color: white;
-  box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.266);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 11px;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.195);
+
+
 
 
 }
 .some-skills-project-cards:hover::after {
-   backdrop-filter: blur(20px) saturate(200%);
+/*    backdrop-filter: blur(20px) saturate(200%);
   -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background-color: #242325;
+  background-color: #751ccf; */
 
 }
 
@@ -316,30 +321,26 @@
 }
 
 
+
  .some-skills-project-cards:after{
   position: absolute;
-  width:286px !important;
-  height: 240px !important;
+  width:240px !important;
+  height: 57px !important;
   right: 0 !important;
   left: 1px !important;
-  top: 1px !important;
-  content: "";
-  border-radius:20px;
-  margin: auto;
-  backdrop-filter: blur(20px) saturate(200%);
-  -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background-color: rgb(11, 11, 11);
+  bottom: 0;
 
- /*  filter: blur(px); */
-  z-index: -2;
+  content: "";
+  border-radius:5px;
+  margin: auto;
+  background: linear-gradient(-45deg, rgb(233, 111, 198), #6bbffbc2, #50faabbc);
+  box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.266);
+  filter: blur(40px); 
+  z-index: -1;
 
 
 
 }
-
-
-
-
 
 
 
@@ -566,6 +567,8 @@
   gap: 30px;
 
 }
+
+
 
 
 
@@ -1539,7 +1542,7 @@ body {
 
   .areas-of-work-cards{
     width: 175px;
-    height: 200px;
+    height: 175px;
   }
 
 
@@ -1547,8 +1550,8 @@ body {
   
    .areas-of-work-cards::after{
  
-    width:171px !important;
-    height: 198px !important;
+    width:172px !important;
+    height: 173px !important;
     right: 0 !important;
     left: 0 !important;
     top: 1px !important;

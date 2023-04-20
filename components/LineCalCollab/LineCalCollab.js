@@ -157,8 +157,8 @@ const SquareCards = () => {
               <p className="collab-card-p text-base text-dark-500 text-black">
                 {card.description}
               </p>
-              <Image src={card.subIcon} width={28} height={28} alt="Getting the job done!" />
-
+{/*               <Image src={card.subIcon} width={28} height={28} alt="Getting the job done!" />
+ */}
             </motion.div>
           ))}
         </div>
