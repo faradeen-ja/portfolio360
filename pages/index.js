@@ -1,8 +1,5 @@
 import { useRef } from "react";
 import Image from "next/image";
-
-import myImage from "/public/images/signature.jpg"; /*  can import your own image from public/images from cdns like linkedin l  */
-
 import LineCalCollab from "/components/LineCalCollab/LineCalCollab";
 import Header from "/components/Header/index";
 /* import ServiceCard from "/components/ServiceCard/index";
@@ -16,7 +13,6 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
 import SelectedWork from "/components/SelectedWork/SelectedWork";
-
 import PageLoader from "../components/PageLoader/PageLoader";
 import SomeSkills from "../components/SomeSkills/SomeSkills";
 /*   */

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import logo from '/public/images/logofj.png'
 import styles from "../PageLoader/PageLoader.module.css";
 
 const PageLoader = () => {
@@ -51,7 +52,7 @@ const PageLoader = () => {
               <div
                 className={`${styles.logoBox} text-center text-white font-bold text-6xl uppercase`}
               >
-                <svg
+           {/*      <svg
                   className={`${styles.svg}`}
                   id="Layer_1"
                   enableBackground="new 0 0 24 24"
@@ -80,12 +81,22 @@ const PageLoader = () => {
                     </g>
                   </switch>
                   FJ
-                </svg>
-                <h3 className={`${styles.h3}`}>FJ</h3>
+                </svg> */}
+        
               </div>
               <div
                 className={`${styles.loaderShape} ${styles.animateSpinSlow}}`}
-              ></div>
+              >
+                <div className="">
+                <Image
+                width={400}
+                height={400}
+                  className={`${styles.logo} absolute`}
+                  src={logo}
+                  alt="My SVG file"
+                />
+                </div>
+              </div>
             </div>
           </div>
 

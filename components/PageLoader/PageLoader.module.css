@@ -72,8 +72,8 @@
 }
 
 .loaderShape {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 9px solid transparent;
   border-radius: 0;
   animation: loader-spin 3s linear infinite;
@@ -94,9 +94,16 @@
   0% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  20% {
+    transform: rotate(77deg);
   }
+  30% {
+    transform: rotate(88deg);
+  }
+  50% {
+    transform: rotate(22deg);
+  }
+
 }
 
 .loaderShape:before {
@@ -153,18 +160,23 @@
 }
 
 /* pageloader styles */
-.h3 {
+.logo {
   position: absolute;
+  
 }
 
 .svg {
   animation: loader-spin 15s linear infinite;
 }
 
+.logo-no-animate{
+  animation: paused;
+}
+
 .logoBox {
   background-color: rgb(0, 0, 0);
-  width: 49%;
-  height: 48%;
+  width: 40%;
+  height: 38%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -203,8 +215,8 @@
 .logoBox::before,
 .logoBox::after {
   position: absolute;
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 44%;
   content: "";
   border-radius: 50%;
 
