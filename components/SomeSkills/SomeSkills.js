@@ -4,7 +4,16 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [relatedProjectsState, setRelatedProjectsState] = useState(relatedProjects);
   const cardRef = useRef(null);
+
+  /* ✓ Read tick */
+  const handleclickForRead = (index) =>{
+    const updatedProjects = [...relatedProjectsState];
+    updatedProjects[index].read = true;
+    setRelatedProjectsState(updatedProjects);
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +27,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setIsVisible]);
 
   return (
     <div
@@ -47,19 +56,20 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
             </li>
           ))}
         </ul>
-        {relatedProjects && relatedProjects.length > 0 && (
+        {relatedProjectsState && relatedProjectsState.length > 0 && (
           <>
             <h3 className="text-lg font-bold mb-2 mt-6">Related Projects:</h3>
-            <div className="some-skills-projects-container  mt-4">
-              {relatedProjects.map((project, index) => (
+            <div className="some-skills-projects-container  mt-4" >
+              {relatedProjectsState.map((project, index) => (
                 <a
-                  key={index}
-                  href={project.url}
-                  target={"blank"}
-                  rel={"norefferrer"}
-                  className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl"
+                key={index}
+                href={project.url}
+                target={"blank"}
+                rel={"norefferrer"}
+                className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl"
+                onClick={() => handleclickForRead(index)}
                 >
-                  
+
                   {/*  // eslint-disable-next-line @next/next/no-img-element 
                  <svg className="w-16 h-16 md:w-24 md:h-24 mr-6 md:mr-8" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                  <path d="M50 5 l40 23 v44 l-40 23 l-40 -23 v-44 z" stroke="currentColor" fill="none" stroke-width="2" />
@@ -98,8 +108,10 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
                       </p>
                     </div>
                   </div>
+                  {project.read && <span className="read-tick">✓ Read</span>}
                 </a>
               ))}
+
             </div>
           </>
         )}

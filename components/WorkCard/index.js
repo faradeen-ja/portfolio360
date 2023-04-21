@@ -1,13 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const WorkCard = ({ img, name, description, onClick, tags }) => {
   const [showMore, setShowMore] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
+  };
+
+  const handleCardClick = () => {
+    setIsClicked(true);
+    onClick();
   };
 
   return (
@@ -18,9 +23,7 @@ const WorkCard = ({ img, name, description, onClick, tags }) => {
           style={{ height: "500px" }}
         >
           <img
-            onClick={
-              onClick
-            } /* moved onclick for project here for better accessibility and the  descreption card addition */
+            onClick={handleCardClick}
             alt={name}
             className="h-full w-full object-cover transition-all ease-out duration-300 hover:scale-110 "
             src={img}
@@ -50,13 +53,14 @@ const WorkCard = ({ img, name, description, onClick, tags }) => {
 
               <button
                 className=" see-project project-card-btns mt-3 ml-8 px-5  text-md font-bold focus:outline-none"
-                onClick={onClick}
+                onClick={handleCardClick}
               >
                 See Project
               </button>
             </div>
           </div>
         </div>
+        {isClicked && <span className="read-tick">✓ Seen</span>}
       </div>
     </>
   );

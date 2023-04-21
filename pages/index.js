@@ -18,7 +18,6 @@ import SomeSkills from "../components/SomeSkills/SomeSkills";
 /*   */
 // Local Data
 import data from "../data/portfolio.json";
-import AddToCalendar from "../components/AddToCalendar/AddToCalendar";
 
 export default function Home() {
   // Ref
@@ -449,6 +448,10 @@ export default function Home() {
       behavior: "smooth",
     });
   };
+
+
+  
+
 
   /* optimzied-setTimer to cooperate with page loader timer*/
   useIsomorphicLayoutEffect(() => {

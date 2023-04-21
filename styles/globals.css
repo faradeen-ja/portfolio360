@@ -443,21 +443,24 @@
 }
 
 
+.read-tick {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 20px;
+  border-radius: 6px;
+  background-color: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
 
 
 
-/* 
-@keyframes animateBackground {
-  0% {
-    background-position: 0% 0%, 100% 0%;
-  }
-  50% {
-    background-position: 100% 0%, 0% 0%;
-  }
-  100% {
-    background-position: 0% 0%, 100% 0%;
-  }
-} */
 
 
 
@@ -494,9 +497,7 @@
 /* Collab section  areas of work  */
 
 .areas-of-work-container{
-
   margin-top: 200px;
- 
 }
 
 
@@ -506,13 +507,6 @@
   justify-content: space-around;
   flex-direction: row;
   width: 95%;
-
-
-
- 
-
-
-
 }
 
 
@@ -546,7 +540,6 @@
   -webkit-backdrop-filter: blur(20px) saturate(200%);
   background-color: rgba(13, 13, 13, 0.947);
 /*   filter: blur(px); */
-
   z-index: -1;
 
 }
@@ -555,7 +548,6 @@
 
 .collab-paragraph{
   width: 40%;
-
 }
 
 
@@ -563,7 +555,7 @@
 
 .collab-cards-box{
  padding: 5px;
-  gap: 30px;
+ gap: 30px;
 
 }
 
@@ -759,6 +751,7 @@
 
 
 .add-to-cal-time-is-gold-box{
+
 
   
 }
