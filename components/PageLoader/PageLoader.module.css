@@ -72,8 +72,8 @@
 }
 
 .loaderShape {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 110px;
   border: 9px solid transparent;
   border-radius: 0;
   animation: loader-spin 3s linear infinite;
@@ -92,7 +92,7 @@
 
 @keyframes loader-spin {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-110deg);
   }
   20% {
     transform: rotate(77deg);
@@ -115,7 +115,6 @@
   height: 100%;
   z-index: -1;
   border: 8px solid transparent;
-
   border-radius: 0;
   animation: loader-gradient 2s linear infinite;
   clip-path: polygon(50% 0%, 83% 25%, 83% 75%, 50% 100%, 17% 75%, 17% 25%);
@@ -175,8 +174,8 @@
 
 .logoBox {
   background-color: rgb(0, 0, 0);
-  width: 40%;
-  height: 38%;
+  width: 30%;
+  height: 30%;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -215,8 +214,8 @@
 .logoBox::before,
 .logoBox::after {
   position: absolute;
-  width: 45%;
-  height: 44%;
+  width: 35%;
+  height: 35%;
   content: "";
   border-radius: 50%;
 
@@ -228,3 +227,4 @@
 /* PAGE LOAGER */
 /* PAGE LOAGER */
 /* PAGE LOAGER */
+

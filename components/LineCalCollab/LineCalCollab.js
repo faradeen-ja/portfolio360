@@ -3,6 +3,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import logo from "/public/images/logofj.png"
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AddToCalendar from "../AddToCalendar/AddToCalendar";
@@ -181,7 +182,12 @@ const SquareCards = () => {
                   Y🕤U!{" "}
                 </span>
               </AnimatedH1>
+ 
             </HangingBox>
+
+            
+
+
           </div>
 
           {/* calendar box */}
@@ -197,7 +203,15 @@ const SquareCards = () => {
                 <a href="https://www.linkedin.com/in/faradeen/">
                   <Image
                     src="https://media.licdn.com/dms/image/D5603AQGRTHIbNliotw/profile-displayphoto-shrink_400_400/0/1679771124043?e=1686182400&v=beta&t=5eF2DMOgKMQ4pHWMabW-PhSWZFdI8cOjdXOtcKhy7tI"
-                    className="calImage"
+                    className="calImage calimgone"
+                    height={60}
+                    width={60}
+                  ></Image>
+                </a>
+                <a href="https://www.linkedin.com/in/faradeen/">
+                   <Image
+                    src={logo}
+                    className="calImage calimgtow"
                     height={60}
                     width={60}
                   ></Image>
@@ -205,10 +219,14 @@ const SquareCards = () => {
               </div>
             </div>
             <AddToCalendar />
+            
           </div>
+  
         </div>
+        
       </div>
       <FeedbacksSection />
+      
     </div>
   );
 };

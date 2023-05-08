@@ -1,14 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Fuse from "fuse.js";
 import skillsData from "/components/Search/skillsData.json";
 import styles from "/components/Search/Search.module.css";
 
-/* the most exciting component in the portfolio,
-look up skills anything within site */
 const options = {
   keys: ["name"],
+  threshold: 0.3, // Adjust the search sensitivity (0.0: exact match, 1.0: match everything)
 };
 
 const fuse = new Fuse(skillsData, options);
@@ -19,10 +16,8 @@ const SearchMe = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
   const [resultsVisible, setResultsVisible] = useState(false);
+  const searchTimeout = useRef(null);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const placeholders = [
     "Search About",
     "Search education or bootcamps",
@@ -42,14 +37,18 @@ const SearchMe = () => {
   useEffect(() => {
     if (query === "") {
       setSearchResults([]);
-    } else {
-      setIsLoading(true);
-      setTimeout(() => {
-        const results = fuse.search(query);
-        setSearchResults(results);
-        setIsLoading(false);
-      }, 1500);
+      setIsLoading(false);
+      return;
     }
+
+    setIsLoading(true);
+    if (searchTimeout.current) clearTimeout(searchTimeout.current);
+
+    searchTimeout.current = setTimeout(() => {
+      const results = fuse.search(query);
+      setSearchResults(results);
+      setIsLoading(false);
+    }, 500);
   }, [query]);
 
   const handleBlur = () => {
@@ -57,9 +56,10 @@ const SearchMe = () => {
       setResultsVisible(false);
     }, 200);
   };
-
   return (
     <div className={styles.container}>
+
+
       <input
         className={`${styles.input} focus:ring-purple-600  placeholder-transition`}
         type="text"

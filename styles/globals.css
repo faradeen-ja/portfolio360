@@ -275,7 +275,62 @@
 }
 
 
+
 .some-skills-project-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  background: linear-gradient(120deg, #4300fbee 0%, #a1d0fac0 100%);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 280px;
+  height: 242px;
+ opacity: 0;
+
+}
+
+
+.some-skills-project-cards::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 276px;
+  height: 238px;
+  background: rgb(17, 17, 17);
+
+}
+
+.slide-in-from-left {
+  animation: slideInFromLeft 0.5s ease-out forwards !important;
+}
+
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0 !important;
+
+
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+/* .some-skills-project-cards {
   width: 284px;
   height: 240px;
   backdrop-filter: blur(16px) saturate(180%);
@@ -289,21 +344,23 @@
 
 
 
-}
-.some-skills-project-cards:hover::after {
-/*    backdrop-filter: blur(20px) saturate(200%);
+} */
+/* .some-skills-project-cards:hover::after {
+   backdrop-filter: blur(20px) saturate(200%);
   -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background-color: #751ccf; */
+  background-color: #751ccf; 
 
-}
+} */
 
 /* link external link */
 .some-skills-project-cards:hover::before {
   content: url('/images/link.png');
-  position: absolute;
-  opacity: 0.8;
-  left: 38%;
-  top: 32%;
+  position: relative;
+  opacity: 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 11;
   animation: rotate 0.5s linear;
 }
@@ -322,7 +379,7 @@
 
 
 
- .some-skills-project-cards:after{
+/*  .some-skills-project-cards:after{
   position: absolute;
   width:240px !important;
   height: 57px !important;
@@ -337,11 +394,9 @@
   filter: blur(40px); 
   z-index: -1;
 
-
-
 }
 
-
+ */
 
 
 .some-skills-project-cats{
@@ -480,7 +535,6 @@
 /* Somekills and project card under selected work section  */
 /* Somekills and project card under selected work section  */
 /* Somekills and project card under selected work section  */
-
 
 
 
@@ -1266,6 +1320,7 @@ body {
 .calImage{
   border-radius: 50%;
   position: absolute;
+  border: solid;
 
 }
 
@@ -1273,12 +1328,32 @@ body {
 
 .cal-img-box:hover{
   filter: drop-shadow(10px 10px 5px rgba(75, 73, 73, 0.504));
-  color:#1383e4;
+  color:#e4c113;
   transition: all 0.1s ease-in-out;
-  border-bottom: solid 6px white;
 
 }
 
+.cal-img-box{
+
+
+}
+.calimgone{
+  transform: translateX(0px);
+  border: solid 2px !important;
+ 
+  
+
+ 
+}
+
+.calimgtow{
+  transform: translateX(-11px);
+  border: solid 2px !important;
+
+ 
+  
+
+}
 
 
 
@@ -1488,7 +1563,7 @@ body {
    
   }
 
-  .some-skills-project-cards::after{
+  .some-skills-project-cards::before{
     width: 99% !important;
   }
 

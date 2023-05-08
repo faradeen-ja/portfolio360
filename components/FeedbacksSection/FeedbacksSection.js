@@ -3,7 +3,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 const FeedbackSlide = ({
   title,
   titleSpan,
@@ -142,6 +141,7 @@ const FeedbacksSection = () => {
   /* reffer to styles/global.css for styles */
   return (
     <div className="feedback-container">
+      
       <section className="feedback-box py-20 bg  -100">
         <div className="slick-card max-w-5xl mx-auto  px-0 sm:px-6 lg:px-8 ">
           <div className="text-center">
@@ -162,6 +162,7 @@ const FeedbacksSection = () => {
               ))}
             </Slider>
           </div>
+
         </div>
       </section>
     </div>

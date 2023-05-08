@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [visibleProjects, setVisibleProjects] = useState([]);
   const [relatedProjectsState, setRelatedProjectsState] = useState(relatedProjects);
   const cardRef = useRef(null);
 
@@ -19,15 +20,28 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
     const handleScroll = () => {
       const top = cardRef.current.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-      if (top < windowHeight * 0.6) {
+      if (top < windowHeight * 0.8) {
         setIsVisible(true);
-      }
+        // Add the visible project cards
+        setTimeout(() => {
+        const newVisibleProjects = relatedProjectsState.map((project, index) => {
+          return {
+            ...project,
+            isVisible: index === 0 || visibleProjects[index - 1]?.isVisible,
+          };
+        });
+        setVisibleProjects(newVisibleProjects);
+      }, 200);
+    }
     };
+
+    
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [setIsVisible]);
+  }, [relatedProjectsState, setIsVisible, visibleProjects]);
+
 
   return (
     <div
@@ -60,14 +74,17 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
           <>
             <h3 className="text-lg font-bold mb-2 mt-6">Related Projects:</h3>
             <div className="some-skills-projects-container  mt-4" >
-              {relatedProjectsState.map((project, index) => (
+
+             {visibleProjects.map((project, index) => (
                 <a
-                key={index}
-                href={project.url}
-                target={"blank"}
-                rel={"norefferrer"}
-                className="some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl"
-                onClick={() => handleclickForRead(index)}
+                  key={index}
+                  href={project.url}
+                  target={"blank"}
+                  rel={"norefferrer"}
+                  className={`some-skills-project-cards relative md:w-80 md:h-80 mr-6 md:mr-8 mb-8 md:mb-0 rounded-xl overflow-hidden transition-all duration-500 ease-out transform hover:-translate-y-2 hover:shadow-xl ${
+                    project.isVisible ? "slide-in-from-left" : ""
+                  }`}
+                  onClick={() => handleclickForRead(index)}
                 >
 
                   {/*  // eslint-disable-next-line @next/next/no-img-element 
@@ -91,7 +108,7 @@ const SomeSkills = ({ iconUrl, title, paragraph, tags, relatedProjects }) => {
              
                   <div className="absolute bottom-20 left-0 w-full h-24  px-4 py-2">
                     {/* bg-gradient-to-t from-red-700 via-gray-800 to-gray-900 opacity-90 */}
-                    <h3 className="some-skills-project-cards-title text-lg font-medium mb-1">
+                    <h3 className="some-skills-project-cards-title text-white text-lg font-medium mb-1">
                       {project.title}
                     </h3>
 
