@@ -198,7 +198,7 @@ const SquareCards = () => {
                 Let&lsquo;s Talk! <br></br>
                 <span className="meeting-span">Schedule a meeting</span>
               </AnimatedH1>
-
+                {/* personal img */}
               <div className="cal-img-box">
                 <a href="https://www.linkedin.com/in/faradeen/">
                   <Image
@@ -208,6 +208,7 @@ const SquareCards = () => {
                     width={60}
                   ></Image>
                 </a>
+                {/* img for logo */}
                 <a href="https://www.linkedin.com/in/faradeen/">
                    <Image
                     src={logo}

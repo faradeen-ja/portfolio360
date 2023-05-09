@@ -306,6 +306,7 @@
 
 .slide-in-from-left {
   animation: slideInFromLeft 0.5s ease-out forwards !important;
+  
 }
 
 
@@ -466,10 +467,10 @@
 .skills-li-items{
   position: relative;
   width: max-content;
-  height: 44px;
+  height: 40px;
   text-align: center;
   z-index: -111;
-  background: linear-gradient(45deg, rgb(44, 148, 246), #a96aede7, #50fac1);
+  background: linear-gradient(45deg, rgb(44, 148, 246), #6a6cede7, #50fac1);
   border-radius: 6px;
   box-shadow: 2px 2px 10px  rgba(0, 0, 0, 0.266);
   color: white;
@@ -483,13 +484,13 @@
   content: '';
   position: absolute;
   width:calc(98%);/* use this to have actual box size for skills tags, nicer border gradeints and look than a fixed size */
-  height: 42px;
+  height: 38px;
   border-radius: 6px;
   top: 1px;
   left: 1px;
   backdrop-filter: blur(20px) saturate(200%);
   -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background-color: rgb(11, 11, 11);
+  background-color: rgb(15, 29, 70);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.233);
 
   z-index: -1;
@@ -641,6 +642,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 
@@ -657,12 +659,14 @@
 .line-dot{
   background-color: #ffffffec;
   width: 20%;
+  border-radius: 6px;
   
 
 }
 
 .line-width{
   width: 98%;
+  border-radius: 6px;
   
   
 }
@@ -683,7 +687,7 @@
   background-color: rgba(49, 49, 77, 0.908);
   border-radius: 12px;
   border: 1px solid rgba(71, 69, 69, 0.125);
-  border-radius: 20px;
+  border-radius: 6px;
 }
 
 .collab-card-title{
@@ -717,7 +721,31 @@
     filter: drop-shadow(-11px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
+.total-yrs::before{
+  content: '';
+  width: 140px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  bottom: ;
+  left: px; /* animate this left ro right */
+  right: px;
+  margin-left: -3px;
+  border: solid white;
+  border-radius: 6px;
+  background: linear-gradient(120deg, #3b00fbee 0%, #a1d0fac0 100%);
+  animation: slideInFromLeft 18s ease-out forwards infinite !important;
+  /* maybe add a backward easy animation aswell @!? */
 
+}
+.total-yrs{
+  text-align: center;
+ 
+  
+  
+
+
+}
 
 /* END */
 /* Collab section  areas of work  */
@@ -1341,17 +1369,11 @@ body {
   transform: translateX(0px);
   border: solid 2px !important;
  
-  
-
- 
 }
 
 .calimgtow{
   transform: translateX(-11px);
   border: solid 2px !important;
-
- 
-  
 
 }
 

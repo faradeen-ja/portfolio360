@@ -99,7 +99,7 @@ const ExperienceLine = () => {
 
         <span
           ref={stop5Ref}
-          className={`line-span  absolute inset-0 bg-lime-500 rounded-full transform transition-all duration-1000 delay-4000 ${
+          className={`line-span text-3xl absolute inset-0 bg-lime-500 rounded-full transform transition-all duration-1000 delay-4000 ${
             stop5 ? "w-full" : "w-0"
           }`}
         >
@@ -122,12 +122,15 @@ const ExperienceLine = () => {
           }  w-8 h-8 bg-white p-2 border-4 border-white-700 rounded-full z-10`}
         />
       </div>
-      <div className="mt-4 total-years-span text-center  text-2xl font-bold">
+      
+      <div className="mt-4 total-years-span text-center text-3xl font-bold">
         <h2
           ref={titleRef}
-          className=" opacity-0 transition-opacity duration-1000"
+          className="opacity-0 transition-opacity duration-1000"
         >
-          All time experience: &nbsp; {totalYears} Years
+         <span className="text-3xl">TOTAL XP</span>&nbsp;
+          <span className="text-7xl total-yrs">{totalYears}</span>
+          <span className="">&nbsp;YEARS</span>
         </h2>
       </div>
     </div>
